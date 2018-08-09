@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test2"
+date:   2018-08-07 14:14:10 -0700
+categories: jekyll update
+featured: 2
+---
+Test 2
