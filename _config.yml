@@ -33,6 +33,11 @@ exclude:
 ### Custom, added settings ###
 permalink: pretty
 
+header_pages:
+  - work.html
+  - blog.html
+
+
 collections:
     posts:
         permalink: /blog/:path/
