@@ -47,3 +47,7 @@ collections:
     work:
         output: true
         permalink: /:collection/:path/
+
+assets:
+   sources:
+       -_assets/fonts

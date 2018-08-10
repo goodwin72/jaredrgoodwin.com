@@ -49,3 +49,15 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+
+//Import fonts
+@font-face {
+  font-family: "Porter";
+  src: url("../assets/fonts/Porter Medium.otf");
+}
+
+@font-face {
+  font-family: "Porter Bold";
+  src: url("../assets/fonts/Porter Bold.otf");
+}

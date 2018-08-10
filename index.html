@@ -2,15 +2,29 @@
 layout: default
 header: Jared Goodwin
 header-sub: Web Developer + Designer
+header-description: > 
+    Hi! I’m a webdev with a love for designs that are simultaneously clean, enticing, and considerate of their audience’s needs and wants. 
 
-#title: Jared Goodwin
+    In my free time, I’m passionate about music and video games, and was previously involved in the competitive Super Smash Bros. scene as a tournament organizer.
+
+###title: Jared Goodwin
 ---
 
 <div class="home">
-	{%- if page.title -%}
-		<h1 class="page-heading">{{ page.title }}</h1>
-	{%- endif -%}
-
+	<div class="home-banner">
+		{%- if page.header -%}
+			<h1 class="home-banner__header-main">{{ page.header }}</h1>
+		{%- endif -%}
+		
+		{%- if page.header-sub -%}
+			<h2 class="home-banner__header-sub">{{ page.header-sub }}</h2>
+		{%- endif -%}
+        
+        {%- if page.header-sub -%}
+            <p class="home-banner__description">{{ page.header-description }}</p>
+        {%- endif -%}
+	</div>
+	
 	<!-- Display all featured pages in the 'Work' collection -->
 	{% include feed-work.html featured-only=true %}	
 	
