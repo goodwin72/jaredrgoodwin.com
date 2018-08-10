@@ -37,6 +37,9 @@ header_pages:
   - work.html
   - blog.html
 
+#featured_work:
+#  - work/work2.html
+#  - work/work1.html
 
 collections:
     posts:

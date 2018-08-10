@@ -10,7 +10,7 @@
 		
 		{%- for post in post_list -%}
 			{% comment %} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {% endcomment %}
-			{% if include.featured-only == false or include.featured-only == nil or work.featured %}
+			{% if include.featured-only == false or include.featured-only == nil or post.featured %}
 				<li>
 					{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 					<span class="post-meta">{{ post.date | date: date_format }}</span>

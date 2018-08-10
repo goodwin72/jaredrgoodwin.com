@@ -11,10 +11,10 @@ header-sub: Web Developer + Designer
 		<h1 class="page-heading">{{ page.title }}</h1>
 	{%- endif -%}
 
-	<!-- Display all pages in the 'Work' collection -->
+	<!-- Display all featured pages in the 'Work' collection -->
 	{% include feed-work.html featured-only=true %}	
 	
-	<!-- Display all pages in the 'Posts' collection -->
-	{% include feed-blog.html featured-only=false %}
+	<!-- Display all featured pages in the 'Posts' collection -->
+	{% include feed-blog.html featured-only=true %}
 	
 </div>
