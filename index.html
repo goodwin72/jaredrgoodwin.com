@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 header: Jared Goodwin
 header-sub: Web Developer + Designer
 header-description: > 
@@ -10,25 +10,3 @@ header-description: >
 ###title: Jared Goodwin
 ---
 
-<div class="home">
-	<div class="home-banner">
-		{%- if page.header -%}
-			<h1 class="home-banner__header-main">{{ page.header }}</h1>
-		{%- endif -%}
-		
-		{%- if page.header-sub -%}
-			<h2 class="home-banner__header-sub">{{ page.header-sub }}</h2>
-		{%- endif -%}
-        
-        {%- if page.header-sub -%}
-            <p class="home-banner__description">{{ page.header-description }}</p>
-        {%- endif -%}
-	</div>
-	
-	<!-- Display all featured pages in the 'Work' collection -->
-	{% include feed-work.html featured-only=true %}	
-	
-	<!-- Display all featured pages in the 'Posts' collection -->
-	{% include feed-blog.html featured-only=true %}
-	
-</div>

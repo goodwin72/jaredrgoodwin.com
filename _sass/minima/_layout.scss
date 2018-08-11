@@ -4,7 +4,7 @@
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
+  min-height: 30px * 1.865;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -260,14 +260,47 @@
 /* BEGINNING OF NEW, NON-MINIMA-DERIVED CLASSES */
 /* -------------------------------------------- */
 
+/* Credit to https://css-tricks.com/full-browser-width-bars/ for this great
+    implementation of a class that allows a background to 'break out' of the 
+    padding and/or width currently set for its element.*/
+.full-width-background{
+    position: relative;
+    z-index: 0;
+}
+
+.full-width-background:before {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    height: 100%;
+    width: 4000px;
+    left: -2000px;
+    z-index: -1;
+}
+
+.site-header--home {
+    @extend .site-header;
+    position: absolute;
+    border: 0;
+    width: 100%;
+    z-index: 9999;
+    margin-bottom: -$spacing-unit;
+    
+}
+
 /**
  * Home Page
  **/
+.home-banner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .home-banner{
     height: 750px;
     width: 100%;
     background-color: #71cfb3;
+    display: table;
 }
 
 .home-banner h1{
