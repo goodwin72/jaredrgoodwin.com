@@ -6,8 +6,9 @@
 	<body>
 		{%- include header.html -%}
         
+        <div class="full-width-background-wrapper">
             <header class="home-banner full-width-background">
-                <div class="home-banner-wrapper">
+                <div class="home-banner-text-wrapper">
                     <div class="wrapper">
                         {%- if page.header -%}
                             <h1 class="home-banner__header-main home-styled-text">{{ page.header }}</h1>
@@ -26,6 +27,7 @@
                     </div>
                 </div>
             </header>
+        </div>
             
         <div class="wrapper">
             <main class="page-content" aria-label="Content">

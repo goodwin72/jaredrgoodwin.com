@@ -313,7 +313,7 @@
 /**
  * Home Page
  **/
-.home-banner-wrapper{
+.home-banner-text-wrapper{
     display: table-cell;
     vertical-align: middle;
 }
@@ -332,6 +332,13 @@
         height: 75vh;
         max-height: 550px;
     }
+}
+
+//Wrapping all of uses of full-width-background with a wrapper works for now,
+//  but isn't a great long-term solution for the overflow issue. 
+//  Something else possible?
+.full-width-background-wrapper{
+    overflow-x: hidden;   
 }
 
 .home-banner h1{
