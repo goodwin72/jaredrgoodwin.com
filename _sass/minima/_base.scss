@@ -179,8 +179,8 @@ pre {
 	//max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
 	//margin-right: auto;
   	//margin-left: auto;
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: $common-padding;
+    padding-left: $common-padding;
     //padding-right: $spacing-unit;
   	//padding-left: $spacing-unit;
     overflow-x: hidden; /*Used to prevent full-page breakout backgrounds from 
