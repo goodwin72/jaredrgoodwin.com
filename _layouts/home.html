@@ -5,26 +5,29 @@
 
 	<body>
 		{%- include header.html -%}
-        <div class="wrapper">
+        
             <header class="home-banner full-width-background">
                 <div class="home-banner-wrapper">
-                    {%- if page.header -%}
-                        <h1 class="home-banner__header-main home-styled-text">{{ page.header }}</h1>
-                    {%- endif -%}
+                    <div class="wrapper">
+                        {%- if page.header -%}
+                            <h1 class="home-banner__header-main home-styled-text">{{ page.header }}</h1>
+                        {%- endif -%}
 
-                    {%- if page.header-sub -%}
-                        <h2 class="home-banner__header-sub home-styled-text">{{ page.header-sub }}</h2>
-                    {%- endif -%}
+                        {%- if page.header-sub -%}
+                            <h2 class="home-banner__header-sub home-styled-text">{{ page.header-sub }}</h2>
+                        {%- endif -%}
 
-                    {%- if page.header-description -%}
-                        {%- for line in page.header-description -%}
-                            <p class="home-banner__description">{{ line }}</p>
-                        {%- endfor -%}
+                        {%- if page.header-description -%}
+                            {%- for line in page.header-description -%}
+                                <p class="home-banner__description">{{ line }}</p>
+                            {%- endfor -%}
 
-                    {%- endif -%}
+                        {%- endif -%}
+                    </div>
                 </div>
             </header>
             
+        <div class="wrapper">
             <main class="page-content" aria-label="Content">
                 <section class="col-display">
                     <!-- Display all featured pages in the 'Work' collection -->
@@ -43,7 +46,7 @@
                 {{ content }}
             </main>
         </div>
-
+        
 		{%- include footer.html -%}
   </body>
 
