@@ -331,8 +331,9 @@
 
 .home-banner p{
     font-size: 1.25em;
+    margin-left: .1em;
     margin-bottom: .675em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Light', sans-serif;
     
     @include media-query($on-palm){
         font-size: 1em;
@@ -340,7 +341,7 @@
 }
 
 .home-banner__description{
-    max-width: 950px;
+    max-width: 800px;
     //margin-left: 8px;
 }
 
