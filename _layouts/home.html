@@ -7,13 +7,13 @@
 		{%- include header.html -%}
         <div class="wrapper">
             <header class="home-banner full-width-background">
-                 <div class="home-banner-wrapper">
+                <div class="home-banner-wrapper">
                     {%- if page.header -%}
-                        <h1 class="home-banner__header-main">{{ page.header }}</h1>
+                        <h1 class="home-banner__header-main home-styled-text">{{ page.header }}</h1>
                     {%- endif -%}
 
                     {%- if page.header-sub -%}
-                        <h2 class="home-banner__header-sub">{{ page.header-sub }}</h2>
+                        <h2 class="home-banner__header-sub home-styled-text">{{ page.header-sub }}</h2>
                     {%- endif -%}
 
                     {%- if page.header-description -%}
@@ -26,11 +26,19 @@
             </header>
             
             <main class="page-content" aria-label="Content">
-				<!-- Display all featured pages in the 'Work' collection -->
-                {%- include feed-work.html featured-only=true -%}	
+                <section class="col-display">
+                    <!-- Display all featured pages in the 'Work' collection -->
+                    <div class="col--half">
+                        {%- include feed-work.html featured-only=true -%}	
+                    </div>
+                    
+                    <!-- Display all featured pages in the 'Posts' collection -->                  
+                    <div class="col--half">
+                        {%- include feed-blog.html featured-only=true -%}
+                    </div>
 
-                <!-- Display all featured pages in the 'Posts' collection -->
-                {%- include feed-blog.html featured-only=true -%}
+                </section>
+
                 
                 {{ content }}
             </main>

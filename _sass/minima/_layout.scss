@@ -271,10 +271,16 @@
 .full-width-background:before {
     content: "";
     background-color: inherit;
+    background-image: inherit;
     position: absolute;
     height: 100%;
-    width: 9000px;
-    left: -4500px;
+    //width: 9000px;
+    //left: -4500px;
+    width: 103vw;
+    left: -48px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -285,7 +291,21 @@
     width: 100%;
     z-index: 9999;
     margin-bottom: -$spacing-unit;
-    
+}
+
+.home-styled-text{
+    text-shadow: .0575em .0575em .025em rgba(0,0,0,.6);
+    color: white;
+}
+
+.col-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col--half{
+    width: 50%;
+    min-width: 500px;
 }
 
 /**
@@ -299,16 +319,24 @@
 .home-banner{
     height: 750px;
     width: 100%;
-    background-color: #71cfb3;
     display: table;
+    background-color: #71cfb3;
+    background-image: url("../assets/img/home-header-background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include media-query($on-palm){
+        height: 75vh;
+        max-height: 550px;
+    }
 }
 
 .home-banner h1{
-    text-shadow: .0575em .0575em .025em #2c5046;
     font-size: 5em;
     font-family: "Porter Bold", "Trebuchet MS", sans-serif;
     margin-bottom: 0;
-    color: white;
+    
     
     @include media-query($on-palm){
         font-size: 3em;
@@ -317,10 +345,8 @@
 }
 
 .home-banner h2{
-    text-shadow: .0575em .0575em .025em #2c5046;
     font-size: 2.5em;
     font-family: "Porter Light", "Trebuchet MS", sans-serif;
-    color: white;
     margin-bottom: 28px;
     
     @include media-query($on-palm){
