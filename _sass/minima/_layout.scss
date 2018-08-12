@@ -356,10 +356,12 @@
 }
 
 .home-banner p{
-    font-size: 1.25em;
+    //font-size: 1.25em;
+    font-size: 1.3em;
     margin-left: .1em;
     margin-bottom: .675em;
-    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-weight: 300;
     
     @include media-query($on-palm){
