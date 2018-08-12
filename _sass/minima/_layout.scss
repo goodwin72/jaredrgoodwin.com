@@ -359,7 +359,8 @@
     font-size: 1.25em;
     margin-left: .1em;
     margin-bottom: .675em;
-    font-family: 'Open Sans Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     
     @include media-query($on-palm){
         font-size: 1em;
