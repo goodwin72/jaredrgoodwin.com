@@ -52,6 +52,8 @@ $on-laptop:        800px !default;
 
 
 //Import fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @font-face {
   font-family: "Porter";
   src: url("../assets/fonts/Porter Medium.otf");
@@ -60,4 +62,9 @@ $on-laptop:        800px !default;
 @font-face {
   font-family: "Porter Bold";
   src: url("../assets/fonts/Porter Bold.otf");
+}
+
+@font-face {
+  font-family: "Porter Light";
+  src: url("../assets/fonts/Porter Light.otf");
 }

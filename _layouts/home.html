@@ -16,18 +16,21 @@
                         <h2 class="home-banner__header-sub">{{ page.header-sub }}</h2>
                     {%- endif -%}
 
-                    {%- if page.header-sub -%}
-                        <p class="home-banner__description">{{ page.header-description }}</p>
+                    {%- if page.header-description -%}
+                        {%- for line in page.header-description -%}
+                            <p class="home-banner__description">{{ line }}</p>
+                        {%- endfor -%}
+
                     {%- endif -%}
                 </div>
             </header>
             
             <main class="page-content" aria-label="Content">
 				<!-- Display all featured pages in the 'Work' collection -->
-                {% include feed-work.html featured-only=true %}	
+                {%- include feed-work.html featured-only=true -%}	
 
                 <!-- Display all featured pages in the 'Posts' collection -->
-                {% include feed-blog.html featured-only=true %}
+                {%- include feed-blog.html featured-only=true -%}
                 
                 {{ content }}
             </main>

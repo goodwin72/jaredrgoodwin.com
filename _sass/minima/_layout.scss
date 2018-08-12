@@ -273,8 +273,8 @@
     background-color: inherit;
     position: absolute;
     height: 100%;
-    width: 4000px;
-    left: -2000px;
+    width: 9000px;
+    left: -4500px;
     z-index: -1;
 }
 
@@ -305,16 +305,42 @@
 
 .home-banner h1{
     text-shadow: .0575em .0575em .025em #2c5046;
-    font-size: 4em;
-    font-family: "Porter Bold";
+    font-size: 5em;
+    font-family: "Porter Bold", "Trebuchet MS", sans-serif;
+    margin-bottom: 0;
     color: white;
+    
+    @include media-query($on-palm){
+        font-size: 3em;
+        font-size: 10vw;
+    }
 }
 
 .home-banner h2{
+    text-shadow: .0575em .0575em .025em #2c5046;
+    font-size: 2.5em;
+    font-family: "Porter Light", "Trebuchet MS", sans-serif;
+    color: white;
+    margin-bottom: 28px;
     
+    @include media-query($on-palm){
+        font-size: 1.5em;
+        font-size: 5vw;
+    }
 }
 
 .home-banner p{
+    font-size: 1.25em;
+    margin-bottom: .675em;
+    font-family: 'Open Sans', sans-serif;
     
+    @include media-query($on-palm){
+        font-size: 1em;
+    }
+}
+
+.home-banner__description{
+    max-width: 950px;
+    //margin-left: 8px;
 }
 

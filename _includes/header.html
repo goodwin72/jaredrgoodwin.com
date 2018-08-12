@@ -7,9 +7,9 @@
     	{%- assign default_paths = site.pages | map: "path" -%}
     	{%- assign page_paths = site.header_pages | default: default_paths -%}
     	
-        {% if page.layout != "home" %}
+        {%- if page.layout != "home" -%}
             <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-        {% endif %}
+        {%- endif -%}
 
 		{%- if page_paths -%}
 			<nav class="site-nav">
