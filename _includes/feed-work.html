@@ -23,6 +23,12 @@
 					{%- if work.description -%}
 						<p>{{ work.description }}</p>
 					{%- endif -%}
+                    
+                    {%- if work.image -%}
+                        <a href="{{ work.url | relative_url }}">
+                            <img class="feed-image" src="../assets/img/{{ work.image }}" alt="{{ work.image-description}}"/>
+                        </a>
+                    {%- endif -%}
 				</li>
 			{%- endif -%}
 		{%- endfor -%}

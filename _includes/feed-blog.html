@@ -23,6 +23,12 @@
 					{%- if site.show_excerpts -%}
 						{{ post.excerpt }}
 					{%- endif -%}
+                    
+                    {%- if post.image -%}
+                        <a href="{{ post.url | relative_url }}">
+                            <img class="feed-image" src="../assets/img/{{ post.image }}" alt="{{ post.image-description}}"/>
+                        </a>
+                    {%- endif -%}
 				</li>
 			{% endif %}
 		{%- endfor -%}
