@@ -55,7 +55,7 @@
 
     	// Gaps between nav items, but not on the last one
     	&:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 36px; //changed
     	}
     }
 
@@ -210,12 +210,12 @@
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+    margin-left: 0;
+    list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+    > li {
+        margin-bottom: $spacing-unit;
+    }
 }
 
 .post-meta {
@@ -344,9 +344,17 @@
 
 .col--half{
     min-width: 450px;
+    margin-bottom: 1.25em; //Added
     padding-right: 90px;
     box-sizing: border-box;
     flex: 1;
+}
+
+.col--half:not(:last-child){
+    @include media-query($on-palm){
+        //margin-bottom: 1.5em; //Added   
+        border-bottom: 1px solid $grey-color;
+    }
 }
 
 /**
@@ -431,6 +439,14 @@
     text-transform: uppercase;
 }
 
-.feed-image{
+.feed-item__header{
+    margin-bottom: $spacing-unit / 4;   
+    
+    h3 {
+        margin-bottom: 0;   
+    }
+}
+
+.feed-item__image{
     width: 550px;
 }
