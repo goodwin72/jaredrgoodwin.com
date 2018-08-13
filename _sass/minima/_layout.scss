@@ -43,62 +43,70 @@
 
     	// Gaps between nav items, but not on the last one
     	&:not(:last-child) {
-     		margin-right: 20px;
+            margin-right: 20px;
     	}
-  	}
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
     }
 
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
 
-      > svg {
-        fill: $grey-color-dark;
-      }
+        label[for="nav-trigger"] {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 36px;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+            fill: $grey-color-dark;
+            }
+        }
+
+        input ~ .trigger {
+            clear: both;
+            display: none;
+        }
+
+        input:checked ~ .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+               margin-right: 0;
+            }
+            margin-left: 20px;
+
+
+            //&.home-styled-text { /* CSS specificty override. Probably not the best solution. */
+                //@extend .home-styled-text;
+                //color: $text-color !important;
+                //font-size: 1.3em !important; //hard-coded to match, make variable 
+                //text-shadow: none;
+            //}
+        }
     }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
 }
 
 
@@ -287,7 +295,10 @@
 .site-header--home {
     @extend .site-header;
     position: absolute;
-    border: 0;
+    border-top-width: inherit;
+    border-top-color: transparent;
+    border-bottom-width: inherit;
+    border-bottom-color: transparent;
     width: 100%;
     z-index: 9999;
     margin-bottom: -$spacing-unit;
@@ -296,6 +307,17 @@
 .home-styled-text{
     text-shadow: .0575em .0575em .025em rgba(0,0,0,.6);
     color: white;
+}
+
+//CSS Override for front page nav buttons. Not the best solution.
+.site-nav .home-styled-text{
+    @extend .home-styled-text;
+    
+    @include media-query($on-palm) {
+        color: black;
+        text-shadow: none;
+        font-size: 1.3em; //Hard-coded to match - make into a variable.
+    }
 }
 
 .col-display{
