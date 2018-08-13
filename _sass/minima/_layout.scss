@@ -441,6 +441,10 @@
     text-transform: uppercase;
 }
 
+.feed-item__text{
+    margin-bottom: $spacing-unit / 2;;
+}
+
 .feed-item__header{
     margin-bottom: $spacing-unit / 4;   
     

@@ -11,18 +11,20 @@
 			{%- comment -%} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {%- endcomment -%}
 			{%- if include.featured-only == false or include.featured-only == nil or work.featured -%}
 				<li>
-					<header class="feed-item__header">
-                        <h3>
-                            <a class="post-link" href="{{ work.url | relative_url }}">
-                                {{ work.title | escape }}
-                            </a>
-                        </h3>
-                        <span class="post-meta">{{ work.time-period }}</span>
-                    </header>
+                    <div class="feed-item__text">    
+                        <header class="feed-item__header">
+                            <h3>
+                                <a class="post-link" href="{{ work.url | relative_url }}">
+                                    {{ work.title | escape }}
+                                </a>
+                            </h3>
+                            <span class="post-meta">{{ work.time-period }}</span>
+                        </header>
 
-					{%- if work.description -%}
-						<p>{{ work.description }}</p>
-					{%- endif -%}
+                        {%- if work.description -%}
+                            <p>{{ work.description }}</p>
+                        {%- endif -%}                    
+                    </div>
                     
                     {%- if work.image -%}
                         <a href="{{ work.url | relative_url }}">

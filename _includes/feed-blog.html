@@ -26,17 +26,21 @@
 			{% comment %} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {% endcomment %}
 			{% if include.featured-only == false or include.featured-only == nil or post.featured %}
 				<li>
-					{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-					<span class="post-meta">{{ post.date | date: date_format }}</span>
-					<h3>
-						<a class="post-link" href="{{ post.url | relative_url }}">
-							{{ post.title | escape }}
-						</a>
-					</h3>
+                    <div class="feed-item__text">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <header class="feed-item__header">
+                            <h3>
+                                <a class="post-link" href="{{ post.url | relative_url }}">
+                                    {{ post.title | escape }}
+                                </a>
+                            </h3>
+                            <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        </header>
 
-					{%- if site.show_excerpts -%}
-						{{ post.excerpt }}
-					{%- endif -%}
+                        {%- if site.show_excerpts -%}
+                            {{ post.excerpt }}
+                        {%- endif -%}
+                    </div>
                     
                     {%- if post.image -%}
                         <a href="{{ post.url | relative_url }}">
