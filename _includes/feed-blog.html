@@ -5,8 +5,10 @@
 		{%- else -%}
 			{% assign post_list = site.posts | reversed %}
         
-            {%- comment -%} I think 'capture' would capture more than just the data I need if I were to wrap the for loop below with it. So two for loops it is then... {%- endcomment -%}
+            {%- comment -%} I think 'capture' would capture more than just the data I need if I were to wrap the for loop below with it. So two for loops it is then... 
         
+            Also, huge thanks to the following source for help in understanding how this could be done in Liquid: http://www.codeshopify.com/blog_posts/building-arrays-with-liquid-in-shopify {%- endcomment -%}
+            
             {%- capture categories -%}
                 {%- for post in post_list -%}
                     {%- if post.categories -%}
@@ -50,7 +52,7 @@
         {%- assign categories_list = categories_list | uniq -%}
         <div class="feed-categories">
             <header>
-                <h1 class="feed-categories__header">Cateogries</h1>
+                <h1 class="feed-categories__header">Categories</h1>
             </header>
             <ul class="feed-categories__list">
                 {%- for category in categories_list -%}

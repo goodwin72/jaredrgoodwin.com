@@ -198,7 +198,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    flex: 1;  
+    flex: 1 1 0; // Changed: Second and third parameters are just defaults, 
+                    //and given for IE compatibility.
 }
 
 .page-heading {
@@ -453,6 +454,13 @@
 }
 
 .feed-categories{
-    float: left;
-    margin-left: 15%;
+    float: right;
+    margin-right: 10%;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    border-left: 1px solid $grey-color;
+}
+
+.feed-categories__list{
+    margin-left: 0;
 }
