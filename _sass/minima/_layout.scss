@@ -197,8 +197,8 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
-  flex: 1;
+    padding: $spacing-unit 0;
+    flex: 1;  
 }
 
 .page-heading {
@@ -212,6 +212,7 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+    float: left; //Added
 
     > li {
         margin-bottom: $spacing-unit;
@@ -449,4 +450,9 @@
 
 .feed-item__image{
     width: 550px;
+}
+
+.feed-categories{
+    float: left;
+    margin-left: 15%;
 }
