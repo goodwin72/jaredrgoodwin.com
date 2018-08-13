@@ -60,11 +60,12 @@
             </header>
             <ul class="feed-categories__list">
                 {%- for category in categories_list -%}
-                    <p><a>
+                    <p><a class="feed-categories__category-link">
                         {{ category }}
                     </a></p>
                 {%- endfor -%}
             </ul>
         </div>
+        <script src="/assets/scripts/category-filter.js"></script>
     {%- endif -%}
 {%- endif -%}
