@@ -2,12 +2,22 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: 30px * 1.865;
+    border-top: 5px solid $grey-color-dark;
+    border-image: linear-gradient(to right, #7ae2cb 0%, #e2cb7a 50%, #e27a91 100%) 5;
+    //border-image: linear-gradient(to right, #7ae2cb 0%, #7ae2cb 33%, #e2cb7a 33%, #e2cb7a 66%, #e27a91 66%, #e27a91 100%) 5;
+    //border-bottom: 1px solid $grey-color-light;
+    min-height: 30px * 1.865;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 1px solid $grey-color-light;
+ 
 }
 
 .site-title {
@@ -297,6 +307,7 @@
 .site-header--home {
     @extend .site-header;
     position: absolute;
+    border-image: none;
     border-top-width: inherit;
     border-top-color: transparent;
     border-bottom-width: inherit;
@@ -304,6 +315,10 @@
     width: 100%;
     z-index: 9999;
     margin-bottom: -$spacing-unit;
+}
+
+.site-header--home:after{
+    border-top-color: transparent; 
 }
 
 .home-styled-text{
