@@ -6,3 +6,19 @@ sub-header: My blog!
 ---
 
 {%- include feed-blog.html featured-only=false -%}	
+
+{%- if site.categories -%}
+    <div class="feed-categories">
+        <header>
+            <h1 class="feed-categories__header">Categories</h1>
+        </header>
+        <ul class="feed-categories__list">
+            {%- for category in site.categories -%}
+                <a href="{{ category.title | downcase }}" class="feed-categories__list__category"><li>
+                    {{ category.title }}
+                </li></a>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <!--<script src="/assets/scripts/category-filter.js"></script>-->
+{%- endif -%}

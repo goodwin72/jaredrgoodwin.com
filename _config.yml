@@ -47,6 +47,9 @@ collections:
     work:
         output: true
         permalink: /:collection/:path/
+    categories:
+        output: true
+        permalink: /blog/:path/
 
 assets:
    sources:

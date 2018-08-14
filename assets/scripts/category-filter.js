@@ -74,7 +74,7 @@ function categoryListItemClick (event) {
 }
 
 window.onload = function () {
-    var category_lists = document.getElementsByClassName("feed-categories__list");
+    /*var category_lists = document.getElementsByClassName("feed-categories__list");
     var category_list_items = document.getElementsByClassName("feed-categories__list__category");
     
     for(var i = 0; i < category_lists.length; i++){
@@ -85,5 +85,5 @@ window.onload = function () {
     for(var i = 0; i < category_list_items.length; i++){
         console.log("Category List Item Text: " + category_list_items[i].innerHTML);
         category_list_items[i].addEventListener('click', categoryListItemClick);
-    }
+    }*/
 }();

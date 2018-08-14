@@ -1,99 +1,59 @@
 {%- if site.posts.size > 0 -%}
 	<ul class="feed">
 		{%- if include.featured-only == true -%}
-			{% assign post_list = site.posts | sort: "featured" %}	
+			{% assign post_list = site.posts | sort: "featured" %}
 		{%- else -%}
 			{% assign post_list = site.posts | reversed %}
         
-            {%- comment -%} I think 'capture' would capture more than just the data I need if I were to wrap the for loop below with it. So two for loops it is then... 
+		{%- endif -%}
         
-            Also, huge thanks to the following source for help in understanding how this could be done in Liquid: http://www.codeshopify.com/blog_posts/building-arrays-with-liquid-in-shopify {%- endcomment -%}
-            
-            {%- capture categories -%}
-                {%- for post in post_list -%}
+		{%- for post in post_list -%}
+            {%- if include.category == nil or post.categories contains include.category -%}
+                {% comment %} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {% endcomment %}
+                {% if include.featured-only == false or include.featured-only == nil or post.featured %}
+
+                {%- capture categories -%}
                     {%- if post.categories -%}
                         {%- for category in post.categories -%}
                             {{ category | append: " " }}
                         {%- endfor -%}
                     {%- endif -%}
-                {%- endfor -%}
-            {%- endcapture -%}
-        
-            {%- assign categories_list = categories | split: ' ' -%}
-		{%- endif -%}
-        
-		{%- for post in post_list -%}
-			{% comment %} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {% endcomment %}
-			{% if include.featured-only == false or include.featured-only == nil or post.featured %}
-        
-            {%- capture categories -%}
-                {%- if post.categories -%}
-                    {%- for category in post.categories -%}
-                        {{ category | append: " " }}
-                    {%- endfor -%}
-                {%- endif -%}
-            {%- endcapture -%}
-        
-            {%- assign post_categories = categories | split: ' ' -%}
-        
-				<li class="feed-item" data-categories="
-                        {%- if post_categories -%}
-                            {%- for category in post_categories -%}                         
-                                {%- if forloop.last -%}
-                                    {{ category }}
-                                {%- else -%}
-                                    {{ category | append: " " }}
+                {%- endcapture -%}
+
+                {%- assign post_categories = categories | split: ' ' -%}
+
+                    <li class="feed-item">
+                        <div class="feed-item__text">
+                            <div class="feed-item__categories">
+                                {%- if post_categories -%}
+                                    {%- for category in post_categories -%}
+                                        <span class="feed-item__categories-item">{{ category }}</span>
+                                    {%- endfor -%}
                                 {%- endif -%}
-                            {%- endfor -%}
-                        {%- endif -%}               
-                    ">
-                    <div class="feed-item__text">
-                        <div class="feed-item__categories">
-                            {%- if post_categories -%}
-                                {%- for category in post_categories -%}
-                                    <span class="feed-item__categories-item">{{ category }}</span>
-                                {%- endfor -%}
+                            </div>
+                            <header class="feed-item__header">
+                                <h3>
+                                    <a class="post-link" href="{{ post.url | relative_url }}">
+                                        {{ post.title | escape }}
+                                    </a>
+                                </h3>
+                                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                            </header>
+
+                            {%- if site.show_excerpts -%}
+                                {{ post.excerpt }}
                             {%- endif -%}
                         </div>
-                        <header class="feed-item__header">
-                            <h3>
-                                <a class="post-link" href="{{ post.url | relative_url }}">
-                                    {{ post.title | escape }}
-                                </a>
-                            </h3>
-                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                            <span class="post-meta">{{ post.date | date: date_format }}</span>
-                        </header>
 
-                        {%- if site.show_excerpts -%}
-                            {{ post.excerpt }}
+                        {%- if post.image -%}
+                            <a href="{{ post.url | relative_url }}">
+                                <img class="feed-item__image" src="../assets/img/{{ post.image }}" alt="{{ post.image-description}}"/>
+                            </a>
                         {%- endif -%}
-                    </div>
-                    
-                    {%- if post.image -%}
-                        <a href="{{ post.url | relative_url }}">
-                            <img class="feed-item__image" src="../assets/img/{{ post.image }}" alt="{{ post.image-description}}"/>
-                        </a>
-                    {%- endif -%}
-				</li>
-			{% endif %}
+                    </li>
+                {% endif %}
+            {% endif %}
 		{%- endfor -%}
 	</ul>
-
-    {%- if categories_list.size > 1 -%}
-        {%- assign categories_list = categories_list | uniq -%}
-        <div class="feed-categories">
-            <header>
-                <h1 class="feed-categories__header">Categories</h1>
-            </header>
-            <ul class="feed-categories__list">
-                {%- for category in categories_list -%}
-                    <a class="feed-categories__list__category"><li>
-                        {{ category }}
-                    </li></a>
-                {%- endfor -%}
-            </ul>
-        </div>
-        <script src="/assets/scripts/category-filter.js"></script>
-    {%- endif -%}
 {%- endif -%}
