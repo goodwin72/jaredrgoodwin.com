@@ -13,7 +13,7 @@
                 {%- for post in post_list -%}
                     {%- if post.categories -%}
                         {%- for category in post.categories -%}
-                            {{ category | append: " "  }}
+                            {{ category | append: " " }}
                         {%- endfor -%}
                     {%- endif -%}
                 {%- endfor -%}
@@ -25,11 +25,32 @@
 		{%- for post in post_list -%}
 			{% comment %} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {% endcomment %}
 			{% if include.featured-only == false or include.featured-only == nil or post.featured %}
-				<li class="feed-item">
+        
+            {%- capture categories -%}
+                {%- if post.categories -%}
+                    {%- for category in post.categories -%}
+                        {{ category | append: " " }}
+                    {%- endfor -%}
+                {%- endif -%}
+            {%- endcapture -%}
+        
+            {%- assign post_categories = categories | split: ' ' -%}
+        
+				<li class="feed-item" data-categories="
+                        {%- if post_categories -%}
+                            {%- for category in post_categories -%}                         
+                                {%- if forloop.last -%}
+                                    {{ category }}
+                                {%- else -%}
+                                    {{ category | append: " " }}
+                                {%- endif -%}
+                            {%- endfor -%}
+                        {%- endif -%}               
+                    ">
                     <div class="feed-item__text">
                         <div class="feed-item__categories">
-                            {%- if post.categories -%}
-                                {%- for category in post.categories -%}
+                            {%- if post_categories -%}
+                                {%- for category in post_categories -%}
                                     <span class="feed-item__categories-item">{{ category }}</span>
                                 {%- endfor -%}
                             {%- endif -%}

@@ -1,14 +1,12 @@
 /*jslint devel: true */
 /* eslint-env browser */
 
-function filterPostsWithCategory(category){
+function filterPostsByCategories(categories){
     //TEMP SOLUTION
     //-- Assumes only one feed on any page with category filtering.
     //-- Also a bit hacked together.
-    //UPDATE: .children method returns only immediate descendants, so this
-    //          doesn't work. Solution will probably have to be recursive.
     
-    /*var feed = document.getElementsByClassName("feed")[0];
+    var feed = document.getElementsByClassName("feed")[0];
     
     if (feed){
         var feedItems = feed.getElementsByClassName("feed-item");
@@ -16,38 +14,46 @@ function filterPostsWithCategory(category){
         if (feedItems.length > 0){
             for (var i = 0; i < feedItems.length; i++)     
             {
-                var feedItemNodes = feedItems[i].children;
-                //console.log(feedItemNodes);
-                for (var z = 0, found = false; z < feedItemNodes.length && found === false; z++){
-                    console.log(feedItemNodes[z]);
-                    if (feedItemNodes[z].classList.contains("feed-item__categories-item")){
-                        if (feedItemNodes[z].innerText.contains(category.toString)){
-                            feedItems[i].setAttribute("display", "none");
-                            found = true;
+                var feedItemCategories = feedItems[i].getAttribute("data-categories").split(" ");
+                
+                //console.log(feedItemCategories);
+                //console.log(categories);
+                 
+                for (var a = 0; a < feedItemCategories.length; a++){
+                    //console.log(category.toString() === feedItemCategories[a]);
+                    for (var categoryIndex = 0; categoryIndex < categories.length; categoryIndex++){
+                       if (categories[categoryIndex].toString() === feedItemCategories[a]){
+                            feedItems[i].style.display = "none";
                         } 
                     }
-                }               
+                    
+                }
             }
         }
-    }*/
+    }
 }
 
 function categoryListClick (event) {
     console.log("EVENT: categoryListClick");
-    /*if(event.target.classList.contains("feed-categories__list__category")){
-        console.log("Event text: " + event.target.innerText);
-    } 
-    else{
-        console.log("Not a link!");   
-    }*/
     
-    for(var i = 0, childNodeList = this.childNodes; childNodeList.length > i; i++){
-        if(childNodeList[i].classList.contains("selected")){
-            filterPostsWithCategory(childNodeList[i].innerText);
-        }
+    //TEMP SOLUTION
+    //-- Assumes only one feed on any page with category filtering.
+    var feedItems = document.getElementsByClassName("feed")[0].getElementsByClassName("feed-item");
+    
+    for (var feedItemIndex = 0; feedItemIndex < feedItems.length; feedItemIndex++){
+        feedItems[feedItemIndex].style.display = "initial";   
     }
     
-    console.log("This: " + this);
+    var categoryList = [];
+    for(var i = 0, childNodeList = this.childNodes; childNodeList.length > i; i++){
+        if(childNodeList[i].classList.contains("selected")){
+            categoryList.push(childNodeList[i].innerText);
+        }
+        
+        filterPostsByCategories(categoryList);
+    }
+    
+    //console.log("This: " + this);
     console.log("-------------------");
 }
 
@@ -55,16 +61,16 @@ function categoryListItemClick (event) {
     console.log("EVENT: categoryListItemClick");
     
     if(this.classList.contains("selected")){
-        console.log("Contains selected.");
+        //console.log("Contains selected.");
         this.classList.remove("selected");   
     }
     else{
-        console.log("Does not contan selected.");
+        //console.log("Does not contan selected.");
         this.classList.add("selected");
     }
     
-    console.log("This: " + this);
-    console.log("-------------------");
+    //console.log("This: " + this);
+    //console.log("-------------------");
 }
 
 window.onload = function () {
