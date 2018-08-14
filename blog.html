@@ -14,8 +14,8 @@ sub-header: My blog!
         </header>
         <ul class="feed-categories__list">
             {%- for category in site.categories -%}
-                <a href="{{ category.title | downcase }}" class="feed-categories__list__category"><li>
-                    {{ category.title }}
+                <a href="{{ category.category | downcase }}" class="feed-categories__list__category"><li>
+                    {{ category.category }}
                 </li></a>
             {%- endfor -%}
         </ul>
