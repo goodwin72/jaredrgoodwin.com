@@ -2,7 +2,7 @@
 layout: post
 title:  "Test2"
 date:   2018-08-07 14:14:10 -0700
-categories: jekyll update
+categories: Jekyll Update
 image: test-image.jpg
 
 featured: 2

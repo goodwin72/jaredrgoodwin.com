@@ -206,11 +206,11 @@
   @include relative-font-size(2);
 }
 
-.post-list-heading {
+.feed-heading { //Changed name
   @include relative-font-size(1.75);
 }
 
-.post-list {
+.feed { //Changed name
     margin-left: 0;
     list-style: none;
     float: left; //Added
@@ -436,13 +436,45 @@
  * Feeds
  **/
 
-.post-list-heading{
+.feed-heading{ //Changed name
     font-weight: 700;
     text-transform: uppercase;
 }
 
+.feed-item{
+    
+}
+
 .feed-item__text{
     margin-bottom: $spacing-unit / 2;
+}
+
+.feed-item__categories{
+    margin-bottom: 4px;
+}
+
+.feed-item__categories-item{ /*Probably needs to be changed to 
+                                ".feed__item__categories__item"*/
+    font-size: $base-font-size / 1.4;
+    padding: .4em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .0175em;
+    
+    //text-transform: capitalize; //For series of inline elements - like <span> -
+                                  //    only the first element is capitalized.
+                                  //    Awkward. */
+    background-color: $grey-color-light;
+    
+    //  Porter version  //
+    //padding-bottom: .6em; //Porter isn't given consistent padding...
+    //font-family: "Porter";
+    //font-weight: 400;
+    
+    
+    &:not(:last-child) {
+        margin-right: .5em;
+    }
 }
 
 .feed-item__header{
@@ -487,7 +519,7 @@
 }
 
 .feed-categories__list__category:active{
-    background-color: $grey-color;
+    background-color: darken($grey-color-light, 20%);
 }
 
 .page-meta{
@@ -504,3 +536,14 @@
             user-select: none;
 }
 
+.selected{
+    background-color: $selected-color;
+    
+    &:hover{
+        background-color: $selected-color;
+    }
+    
+    &:active{
+        background-color: darken($selected-color, 20%);
+    }
+}
