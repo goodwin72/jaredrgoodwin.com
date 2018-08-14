@@ -1,9 +1,23 @@
 {%- if site.posts.size > 0 -%}
 	<ul class="feed">
-		{%- if include.featured-only == true -%}
+        <p class="{{ include.category }}">{{ include.category }}</p>
+        {%- if include.featured-only == true -%}
 			{% assign post_list = site.posts | sort: "featured" %}
-        {%- comment -%}{%- elsif include.cateogry != '' -%}
-            {% assign post_list = site.posts | where: "categories", "{{ include.category }}" %}{%- endcomment -%}
+        {%- elsif include.cateogry != '' -%}
+            {% assign post_array = "" | split: ',' %}
+            
+            {%- for post in site.posts -%}
+                {% for category in post.categories %}
+                    <!--<p>{{ category }}</p>
+                    <p>{{ include.category }}</p>
+                    <p>-------------</p>-->
+                    {% if category == include.category %}
+                        {% assign post_array = post_array | push: post %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        
+            {% assign post_list = post_array | uniq %}
 		{%- else -%}
 			{% assign post_list = site.posts | reversed %}
 		{%- endif -%}
