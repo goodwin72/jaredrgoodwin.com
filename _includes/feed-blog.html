@@ -60,9 +60,9 @@
             </header>
             <ul class="feed-categories__list">
                 {%- for category in categories_list -%}
-                    <p><a class="feed-categories__category-link">
+                    <a class="feed-categories__list__category"><li>
                         {{ category }}
-                    </a></p>
+                    </li></a>
                 {%- endfor -%}
             </ul>
         </div>

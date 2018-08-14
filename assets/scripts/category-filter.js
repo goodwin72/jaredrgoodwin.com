@@ -1,11 +1,15 @@
 /*jslint devel: true */
 /* eslint-env browser */
 
+function categoryListClick (event) {
+    console.log("This: " + event.target.innerText);
+}
+
 window.onload = function () {
+    var category_lists = document.getElementsByClassName("feed-categories__list");
     
-    document.addEventListener('click', function (event){
-        if (event.target.matches(".feed-categories__category-link")){
-            console.log("hello!");
-        }
-    })
+    for(var i = 0; i < category_lists.length; i++){
+        console.log("foewjfewo");
+        category_lists[i].addEventListener('click', categoryListClick);   
+    }
 }();
