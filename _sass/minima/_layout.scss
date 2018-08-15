@@ -369,6 +369,7 @@
         min-width: 100%;    //A bit strange, but works for all browsers tested
                             //   (instead of, for example, min-width: auto,
                             //    which doesn't work in IE11).
+        padding-right: 0;
     }
 }
 
@@ -578,6 +579,10 @@
 
 .IE-widthfix{
     width: 100%;
+    
+    @include media-query($on-palm){
+        width: auto;   
+    }
 }
 
 .selected{
