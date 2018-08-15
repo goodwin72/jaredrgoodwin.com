@@ -408,6 +408,7 @@
     font-size: 5em;
     font-family: "Porter Bold", "Trebuchet MS", sans-serif;
     margin-bottom: 0;
+    line-height: $base-line-height * 0.9;
     
     
     @include media-query($on-palm){

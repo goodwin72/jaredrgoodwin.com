@@ -14,18 +14,27 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    
+    //Backup rules for older browsers
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    //line-height: $base-line-height; //Commented out because it looks larger in IE11 
+                                        //with it on - it becomes the same as modern 
+                                        //browsers without it?
+    font-family: $base-font-family;
+    
+      color: $text-color;
+      background-color: $background-color;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-feature-settings: "kern" 1;
+         -moz-font-feature-settings: "kern" 1;
+           -o-font-feature-settings: "kern" 1;
+              font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
 }
 
 

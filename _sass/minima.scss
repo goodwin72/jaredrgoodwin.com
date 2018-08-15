@@ -58,16 +58,23 @@ $on-laptop:        800px !default;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
 @font-face {
-  font-family: "Porter";
-  src: url("/assets/fonts/Porter Medium.otf");
+    font-family: "Porter";
+    src: url("/assets/fonts/Porter/Porter-Medium.otf") format("opentype"),
+        url('assets/fonts/Porter/Porter-Medium.woff') format('woff'),
+        url("/assets/fonts/Porter/Porter-Medium.eot");
 }
 
 @font-face {
-  font-family: "Porter Bold";
-  src: url("/assets/fonts/Porter Bold.otf");
+    
+    font-family: "Porter Bold";
+    src: url("/assets/fonts/Porter/Porter-Bold.otf") format("opentype"),
+        url('assets/fonts/Porter/Porter-Bold.woff') format('woff'),
+        url("/assets/fonts/Porter/Porter-Bold.eot");
 }
 
 @font-face {
   font-family: "Porter Light";
-  src: url("/assets/fonts/Porter Light.otf");
+    src: url("/assets/fonts/Porter/Porter-Light.otf") format("opentype"),
+        url('assets/fonts/Porter/Porter-Medium.woff') format('woff'),
+        url("/assets/fonts/Porter/Porter-Light.eot");
 }
