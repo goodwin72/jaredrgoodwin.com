@@ -235,6 +235,19 @@
 /**
  * Posts
  */
+.post { //Added
+    @extend .wrapper;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 12));
+	max-width:         calc(#{$content-width} - (#{$spacing-unit} * 12));
+
+  	@include media-query($on-palm) {
+    	max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    	max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    	padding-right: $spacing-unit / 4;
+    	padding-left: $spacing-unit / 4;
+  }
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
@@ -487,7 +500,12 @@
 
 .feed-item__image{
     max-width: 550px;
+    max-height: 325px;
     width: 100%;
+}
+
+.post-image{
+  
 }
 
 .feed-categories{

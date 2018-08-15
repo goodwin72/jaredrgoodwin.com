@@ -4,6 +4,7 @@ title:  "Test2"
 date:   2018-08-07 14:14:10 -0700
 categories: Jekyll Temp
 image: test-image.jpg
+image-description: Test image!
 
 featured: 2
 ---
