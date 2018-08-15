@@ -464,12 +464,16 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.feed-item__categories{
-    margin-bottom: 4px;
+.post-categories{
+    margin-bottom: $base-font-size / 2;
 }
 
-.feed-item__categories-item{ /*Probably needs to be changed to 
-                                ".feed__item__categories__item"*/
+.feed-item__categories{
+    @extend .post-categories;
+    margin-bottom: $base-font-size / 3.75;
+}
+
+.post-categories__item {
     font-size: $base-font-size / 1.4;
     padding: .4em;
     text-transform: uppercase;
@@ -490,6 +494,10 @@
     &:not(:last-child) {
         margin-right: .5em;
     }
+}
+
+.feed-item__categories-item{
+    @extend .post-categories__item;
 }
 
 .feed-item__header{
