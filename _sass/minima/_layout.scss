@@ -288,6 +288,10 @@
       @include relative-font-size(1.125);
     }
   }
+    
+    img {   //Added
+        margin-bottom: $spacing-unit / 2;
+    }
 }
 
 
@@ -502,10 +506,6 @@
     max-width: 550px;
     max-height: 325px;
     width: 100%;
-}
-
-.post-image{
-  
 }
 
 .feed-categories{
