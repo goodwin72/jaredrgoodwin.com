@@ -364,6 +364,12 @@
     padding-right: 90px;
     box-sizing: border-box;
     flex: 1;
+    
+    @include media-query($on-palm) {
+        min-width: 100%;    //A bit strange, but works for all browsers tested
+                            //   (instead of, for example, min-width: auto,
+                            //    which doesn't work in IE11).
+    }
 }
 
 .col--half:not(:last-child){
