@@ -2,6 +2,8 @@
  * Site header
  */
 .site-header {
+    border: 0 solid transparent; //Fixes border image appearing on all four 
+                                    //borders on some mobile browsers.
     border-top: 5px solid $grey-color-dark;
     border-image: linear-gradient(to right, #7ae2cb 0%, #e2cb7a 50%, #e27a91 100%) 5;
     //border-image: linear-gradient(to right, #7ae2cb 0%, #7ae2cb 33%, #e2cb7a 33%, #e2cb7a 66%, #e27a91 66%, #e27a91 100%) 5;
