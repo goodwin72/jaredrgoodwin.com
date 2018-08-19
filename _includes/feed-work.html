@@ -1,38 +1,57 @@
 {%- if site.work.size > 0 -%}
-	<ul class="feed">
-		
-		{%- if include.featured-only == true -%}
-			{%- assign work_list = site.work | sort: "featured" -%}	
-		{%- else -%}
-			{%- assign work_list = site.work -%}
-		{%- endif -%}
-		
-		{%- for work in work_list -%}
-			{%- comment -%} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {%- endcomment -%}
-			{%- if include.featured-only == false or include.featured-only == nil or work.featured -%}
-				<li class="feed-item">
-                    <div class="feed-item__text">    
-                        <header class="feed-item__header">
-                            <h3>
-                                <a class="post-link" href="{{ work.url | relative_url }}">
-                                    {{ work.title }}
-                                </a>
-                            </h3>
-                            <span class="post-meta">{{ work.time-period }}</span>
-                        </header>
+    <div class="feed__wrapper">
+        <ul class="feed">
 
-                        {%- if work.description -%}
-                            <p>{{ work.description }}</p>
-                        {%- endif -%}                    
-                    </div>
-                    
-                    {%- if work.image -%}
-                        <a href="{{ work.url | relative_url }}">
-                            <img class="feed-item__image" src="../assets/img/{{ work.image }}" alt="{{ work.image-description}}"/>
-                        </a>
-                    {%- endif -%}
-				</li>
-			{%- endif -%}
-		{%- endfor -%}
-	</ul>
+            {%- if include.featured-only == true -%}
+                {%- assign work_list = site.work | sort: "featured" -%}	
+            {%- else -%}
+                {%- assign work_list = site.work -%}
+            {%- endif -%}
+
+            {%- unless include.cateogry == '' or include.category == nil -%}
+                {% assign work_array = "" | split: ',' %}
+
+                {%- for work in site.work -%}
+                    {% for category in work.categories %}
+                        <!--<p>{{ category }}</p>
+                        <p>{{ include.category }}</p>
+                        <p>-------------</p>-->
+                        {% if category == include.category %}
+                            {% assign work_array = work_array | push: work %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+                {% assign work_list = work_array | uniq %}
+            {%- endunless -%}
+
+            {%- for work in work_list -%}
+                {%- comment -%} Frustratingly, Liquid does not appear to have a bunch of useful logical syntax. This is the best I could do. {%- endcomment -%}
+                {%- if include.featured-only == false or include.featured-only == nil or work.featured -%}
+                    <li class="feed-item">
+                        <div class="feed-item__text">    
+                            <header class="feed-item__header">
+                                <h3>
+                                    <a class="post-link" href="{{ work.url | relative_url }}">
+                                        {{ work.title }}
+                                    </a>
+                                </h3>
+                                <span class="post-meta">{{ work.time-period }}</span>
+                            </header>
+
+                            {%- if work.description -%}
+                                <p>{{ work.description }}</p>
+                            {%- endif -%}                    
+                        </div>
+
+                        {%- if work.image -%}
+                            <a href="{{ work.url | relative_url }}">
+                                <img class="feed-item__image" src="../assets/img/{{ work.image }}" alt="{{ work.image-description}}"/>
+                            </a>
+                        {%- endif -%}
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    </div>
 {%- endif -%}

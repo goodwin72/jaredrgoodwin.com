@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smash Bros at WSU Adverisements
+title: Smash Bros at WSU Advertisements
 description: 
 image: test-image.jpg
 image-description: Test image!

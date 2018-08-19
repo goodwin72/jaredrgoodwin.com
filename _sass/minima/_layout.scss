@@ -210,16 +210,32 @@
 
 .feed-heading { //Changed name
   @include relative-font-size(1.75);
+    padding-bottom: $spacing-unit / 3;
+    border-bottom: 1px solid $grey-color;
+}
+
+.feed-heading--work{
+    @extend .feed-heading;
+
 }
 
 .feed { //Changed name
     margin-left: 0;
     list-style: none;
     float: left; //Added
+    width: 100%;
 
     > li {
         margin-bottom: $spacing-unit;
+        
+        @include media-query($on-palm){
+            //margin-bottom: $spacing-unit / 2;   
+        }
     }
+}
+
+.feed__wrapper{
+    @extend %clearfix;
 }
 
 .post-meta {
@@ -362,8 +378,6 @@
 
 .col--half{
     min-width: 450px;
-    margin-bottom: 1.25em; //Added
-    padding-right: 90px;
     box-sizing: border-box;
     flex: 1;
     
@@ -373,13 +387,8 @@
                             //    which doesn't work in IE11).
         padding-right: 0;
     }
-}
-
-.col--half:not(:last-child){
-    @include media-query($on-palm){
-        //margin-bottom: 1.5em; //Added   
-        border-bottom: 1px solid $grey-color;
-    }
+    
+    padding-right: 90px;
 }
 
 /**
@@ -467,6 +476,12 @@
 
 .feed-item{
     
+}
+
+//Used to fix img margin-bottom causing extra margin to appear under each
+//  feed-item, as margins do not collapse in a flex formatting context.
+.feed-item *:last-child{    
+    margin-bottom: 0;
 }
 
 .feed-item__text{
@@ -569,6 +584,30 @@
     color: $grey-color;
 }
 
+.work__wrapper{
+    margin-bottom: 1.25em; //Added
+}
+
+.work__wrapper .feed{   //NOTE: CSS specificity is pretty high here...
+    @extend .col-display;
+    
+    > li {
+        padding-right: 36px;
+        flex: 1 1 0;
+	    min-width: 50%;
+	    max-width: 50%;
+        width: 50%;
+	    box-sizing: border-box;
+    
+        @include media-query($on-laptop){
+            padding-right: 0;
+            max-width: 100%;
+            width: 100%;
+            flex: none;
+        }
+    }
+}
+
 
 %noselect{
   -webkit-touch-callout: none;
@@ -596,5 +635,12 @@
     
     &:active{
         background-color: darken($selected-color, 20%);
+    }
+}
+
+.common__mobile-seperator:not(:last-child){
+    @include media-query($on-palm){  
+        border-bottom: 1px solid $grey-color;
+        margin-bottom: 1.25em; //Added
     }
 }

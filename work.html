@@ -5,4 +5,23 @@ permalink: /work/
 sub-header: Work that I've done!
 ---
 
-{%- include feed-work.html featured-only=false -%}	
+<div class="work__wrapper">
+    <h3 class="feed-heading--work">Web</h3>
+    {%- include feed-work.html featured-only=false category="Web" -%}
+</div>
+
+<div class="work__wrapper">
+    <h3 class="feed-heading--work">Software</h3>
+    {%- include feed-work.html featured-only=false category="Software" -%}
+</div>
+
+<div class="work__wrapper">
+    <h3 class="feed-heading--work">Graphic Design</h3>
+    {%- include feed-work.html featured-only=false category="Graphics" -%}
+</div>
+
+<div class="work__wrapper">
+    <h3 class="feed-heading--work">Photography</h3>
+    {%- include feed-work.html featured-only=false category="Photography" -%}
+</div>
+
