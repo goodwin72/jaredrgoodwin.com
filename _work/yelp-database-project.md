@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yelp Database Design (School)
+title: Yelp Database Design Project (School)
 description: 
 image: test-image.jpg
 image-description: Test image!
