@@ -197,6 +197,7 @@ pre {
   	//padding-left: $spacing-unit;
     overflow-x: hidden; /*Used to prevent full-page breakout backgrounds from 
                         creating x-axis scrollbars*/
+    box-sizing: border-box;
   	@extend %clearfix;
 
   	@include media-query($on-laptop) {

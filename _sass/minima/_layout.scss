@@ -223,7 +223,7 @@
     margin-left: 0;
     list-style: none;
     float: left; //Added
-    width: 100%;
+    //width: 100%;  //Caused problem on Blog page with floated elements.
 
     > li {
         margin-bottom: $spacing-unit;
@@ -590,6 +590,9 @@
 
 .work__wrapper .feed{   //NOTE: CSS specificity is pretty high here...
     @extend .col-display;
+    width: 100%;    //Quick fix to get all work feeds to display 100%, but not 
+                    //  have the blog feed interfere with the floated category
+                    //  on the blog page
     
     > li {
         padding-right: 36px;
