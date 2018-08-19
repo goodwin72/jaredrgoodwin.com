@@ -50,7 +50,7 @@
                         <header class="feed-item__header">
                             <h3>
                                 <a class="post-link" href="{{ post.url | relative_url }}">
-                                    {{ post.title | escape }}
+                                    {{ post.title }}
                                 </a>
                             </h3>
                             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
