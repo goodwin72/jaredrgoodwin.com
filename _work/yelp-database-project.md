@@ -5,6 +5,7 @@ description:
 image: test-image.jpg
 image-description: Test image!
 categories: Software
+end-date: 2018-05-01
 
 time-period: Spring 2018
 
