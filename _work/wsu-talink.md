@@ -2,8 +2,8 @@
 layout: post
 title: WSU TALink (School)
 description: 
-image: test-image.jpg
-image-description: Test image!
+image: work__wsutalink.jpg
+image-description: WSU TALink Site Visual Example
 categories: Web
 end-date: 2017-12-08
 
