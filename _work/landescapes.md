@@ -2,8 +2,8 @@
 layout: post
 title: LandEscapes Site Redesign
 description: 
-image: test-image.jpg
-image-description: Test image!
+image: work__landescapes.jpg
+image-description: LandEscapes Site Redesign Visual Example
 categories: Web
 end-date: 2018-07-20
 
