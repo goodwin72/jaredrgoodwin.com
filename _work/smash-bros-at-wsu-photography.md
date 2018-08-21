@@ -2,8 +2,8 @@
 layout: post
 title: Smash Bros at WSU Event Photography
 description: 
-image: test-image.jpg
-image-description: Test image!
+image: work__smash-bros-at-wsu-photography.jpg
+image-description: Smash Bros at WSU Event Photography Visual Example
 categories: Photography
 end-date: 2017-01-14
 
