@@ -3,7 +3,7 @@ layout: post
 title: Backyard Harvest UX Testing (School)
 description: 
 image: work__backyard-harvest.jpg
-image-description: Test image!
+image-description: Backyard Harvest UX Testing Visual Example
 categories: UX Web
 end-date: 2017-05-01
 

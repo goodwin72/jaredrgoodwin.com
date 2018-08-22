@@ -2,8 +2,8 @@
 layout: post
 title: <em>Machi Koro</em> Video Game
 description: 
-image: test-image.jpg
-image-description: Test image!
+image: work__machi-koro.jpg
+image-description: Machi Koro Video Game Visual Example
 categories: Software
 end-date: 2017-07-30
 
