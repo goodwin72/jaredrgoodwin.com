@@ -2,8 +2,8 @@
 layout: post
 title: Yelp Database Design Project (School)
 description: 
-image: test-image.jpg
-image-description: Test image!
+image: work__yelp-project.jpg
+image-description: Yelp Database Design Project Visual Example
 categories: Software
 end-date: 2018-05-01
 
