@@ -1,0 +1,34 @@
+{%- if include.thumbnail -%}
+    {%- assign img_link_split_list = include.img | split: "/" -%}
+    {%- assign thumb_link = "" -%}
+
+    {%- assign img_link_split_list_size = img_link_split_list | size -%}
+    {%- assign last_in_list = img_link_split_list | last -%}
+
+    {%- for piece in img_link_split_list -%}
+
+        {%- if piece != last_in_list and piece != "" %}
+            {%- assign thumb_link = thumb_link | append: "/" | append: piece -%}
+        {%- endif -%}
+    {%- endfor -%}
+    
+    {%- assign thumb_link = thumb_link | append: "/thumb/" -%}
+
+    {%- assign file_path = img_link_split_list | last | split: "." | first -%}
+    {%- assign thumb_link = thumb_link | append: file_path | append: "--thumb.jpg" -%}
+
+    {%- assign img_link = include.img -%}
+    {%- assign img = thumb_link -%}
+{%- else -%}
+    {%- assign img_link = include.img-link -%}
+    {%- assign img = include.img -%}
+{%- endif -%}
+
+<div class="image-custom">
+    <figure>
+        <a href="{{ img_link | escape }}">
+            <img src="{{ img | escape }}" alt="{{ include.alt-text | escape }}"/>
+        </a>
+        <figcaption>{{ include.img-caption }}</figcaption>
+    </figure>
+</div>
