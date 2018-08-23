@@ -15,6 +15,3 @@ During my freshman year of college, I helped start **Smash Bros at WSU**, a stud
 Shortly after joining the club committee at the start of 2014, I tried out designing advertisements for club events. With free ad services available for student organizations, I was able to display my work in various places across campus - and after doing so, we saw a steady rise in participant count at our events, roughly doubling by the end of the 2015 spring semester.
 
 The primary goal of my designs was to both create something eye-catching and "striking" in a way befitting of competitive gaming, but also something bright and inviting so as to attract people who are dedicated to video games, but maybe have never felt comfortable with the typical environment surrounding competitive gaming - a group who's size I've always suspected is larger than most assume, especially for the *Super Smash Bros.* games.
-
-My design abilities also greatly improved during these years from working consistently on this project and regularly applying new design knowledge through it: there is a notable jump in visual clarity and focus from my earlier work to my later work.
-
