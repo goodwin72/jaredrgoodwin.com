@@ -1,4 +1,4 @@
-{%- if include.thumbnail -%}
+{%- if include.use-thumbnail -%}
     {%- assign img_link_split_list = include.img | split: "/" -%}
     {%- assign thumb_link = "" -%}
 
@@ -20,9 +20,15 @@
     {%- assign img_link = include.img -%}
     {%- assign img = thumb_link -%}
 {%- else -%}
-    {%- assign img_link = include.img-link -%}
     {%- assign img = include.img -%}
+
+    {%- if include.img-link -%}
+        {%- assign img_link = include.img-link -%}
+    {%- else %-}
+        {%- assign img_link = include.img -%}
+    {%- endif -%}
 {%- endif -%}
+
 
 <div class="image-custom">
     <figure>

@@ -20,10 +20,10 @@ The primary goal of my designs was to both create something visually "striking" 
 
 <figcaption></figcaption>
 
-{%- include image-custom.html thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__1.jpg" img-caption="August 2016" alt-text="Smash Bros at WSU Ad 1" -%}
+{%- include image-custom.html use-thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__1.jpg" img-caption="August 2016" alt-text="Smash Bros at WSU Ad 1" -%}
 
-{%- include image-custom.html thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__4.jpg" img-caption="October 2016 <br>Reimagining of a design made in October 2014." alt-text="Smash Bros at WSU Ad 4" -%}
+{%- include image-custom.html use-thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__4.jpg" img-caption="October 2016 <br>Reimagining of a design made in October 2014." alt-text="Smash Bros at WSU Ad 4" -%}
 
-{%- include image-custom.html thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__2.jpg" img-caption="March 2016 <br>Smash 4 featured somewhat of a re-branding from the standard SB@WSU theme." alt-text="Smash Bros at WSU Ad 2" -%}
+{%- include image-custom.html use-thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__2.jpg" img-caption="March 2016 <br>Smash 4 featured somewhat of a re-branding from the standard SB@WSU theme." alt-text="Smash Bros at WSU Ad 2" -%}
 
-{%- include image-custom.html thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__3.jpg" img-caption="December 2015 <br>Social media banner featuring the top 10 players for each game for the semester." alt-text="Smash Bros at WSU Ad 3" -%}
+{%- include image-custom.html use-thumbnail=true img="/assets/img/work__smash-bros-at-wsu-ad__3.jpg" img-caption="December 2015 <br>Social media banner featuring the top 10 players for each game for the semester." alt-text="Smash Bros at WSU Ad 3" -%}
