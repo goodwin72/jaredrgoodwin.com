@@ -22,6 +22,7 @@ exclude:
    - (Unused)
    - Gemfile
    - Gemfile.lock
+   - gulpfile.js
    - node_modules
    - vendor/bundle/
    - vendor/cache/

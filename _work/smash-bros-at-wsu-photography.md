@@ -30,5 +30,3 @@ Here are several of my favorite photos from those events:
 
 {%- include image-custom.html use-thumbnail=true img="/assets/img/work__smash-bros-at-wsu-photo__4.jpg" alt-text="Smash Bros at WSU Photo 4" -%}
 
-
-The original Facebook album posts of my work can be found here, in reverse-chronological order. (Anything on the page that is not linked below was not taken be me.)
