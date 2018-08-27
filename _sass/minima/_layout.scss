@@ -193,11 +193,19 @@
   }
 }
 
+//Content - page or post
+//  Blank for now. Created to treat headers differently on posts than pages.
+.content {
+    
+}
 
 
 /**
  * Page content
  */
+//This is an element that exists on all pages, higher up than content or post 
+//  content. ...Should maybe be renamed? 'Page' as in not-a-post and 
+//  'Page' as in any page can be confusing to differentiate
 .page-content {
     padding: $spacing-unit 0;
     flex: 1 1 0; // Changed: Second and third parameters are just defaults, 
@@ -281,32 +289,42 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+    @extend .content !optional; //remove !optional if content gets rules
+    margin-bottom: $spacing-unit;
 
-  h2 {
-    @include relative-font-size(2);
+    h2 {
+        @include relative-font-size(2);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+        @include media-query($on-laptop) {
+          @include relative-font-size(1.75);
+        }
     }
-  }
 
-  h3 {
-    @include relative-font-size(1.625);
+    h3 {
+        @include relative-font-size(1.625);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
+        @include media-query($on-laptop) {
+          @include relative-font-size(1.375);
+        }
     }
-  }
 
-  h4 {
-    @include relative-font-size(1.25);
+    h4 {
+        @include relative-font-size(1.25);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
+        @include media-query($on-laptop) {
+          @include relative-font-size(1.125);
+        }
     }
-  }
-
+    
+    h2, h3, h4, h5, h6 {
+        margin-top: $spacing-unit + 2px;
+        margin-bottom: $spacing-unit / 3;
+    }
+    
+    h2 + h2, h2 + h3, h3 + h3, h3 + h4, h4 + h4, h4 + h5, h5 + h5, h5 + h6, h6 + h6 {
+        margin-top: 0;   
+    }
+    
 }
 
 
