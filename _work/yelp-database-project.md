@@ -11,7 +11,7 @@ time-period: Spring 2018
 
 ---
 
-For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a relational database and a native search application for the dataset released by Yelp in their 2013 Dataset Challenge.
+For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a **relational database** and a **native search application** for the dataset released by **Yelp** in their 2013 Dataset Challenge.
 
 Across 3 milestones, our team of 3:
 - modelled the data relationships using an Entity-Relationship diagram

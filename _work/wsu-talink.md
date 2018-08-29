@@ -20,17 +20,31 @@ The site features accounts for students and instructors, and functions as follow
 
 Here's a basic demonstration video, narrated by one of my team partners:
 
-[video]
+<iframe class="video-embed" width="721" height="450" src="https://www.youtube-nocookie.com/embed/-QUQfQp4edU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Creating a design document
-Before we began writing code, we wrote a design document describing, in fairly granular detail, most of the aspects of our project. This included:
+Before we began writing code, we wrote a design document and a project requirements document. 
+
+The design document described, in fairly granular detail, most of the aspects of our project. This included:
 - The design architecture of the site
 - The individual systems and subsystems of the site (e.g. user account creation, logging into an account, etc.)
 - The design of the database
 - The user interface (including UI mockups)
 - A testing plan for the API routes
 
-Our initial design document can be found [here].
+The project requirements document detailed:
+- A description of who the users, customers, and stakeholders of the app would be
+- User stories, which explain most of the site's anticipated use cases through examples
+- Non-functional requirements, such as usability considerations
+
+**Some of the UI mockups:**
+<figcaption></figcaption>
+{%- include image-custom.html use-thumbnail=true  img="/assets/img/work__wsutalink__ui__1.jpg" alt-text="WSU TALink UI Mockup 1" -%}
+
+{%- include image-custom.html height="375px" img="/assets/img/work__wsutalink__ui__2.jpg" alt-text="WSU TALink UI Mockup 2" -%}
+
+{%- include image-custom.html use-thumbnail=true height="375px" img="/assets/img/work__wsutalink__ui__3.jpg" alt-text="WSU TALink UI Mockup 3" -%}
+
 
 ### Architecture
 We developed the site using:
@@ -57,11 +71,7 @@ We developed the project in three sprints, each lasting approximately four weeks
 
 We learned the hard way that sprints are *fixed* in length, and prioritize functioning software: we recognized that instructors adding courses was not going to be completely finished for Iteration 2, and instead prioritized having the other goals working as intended for the deadline, completing that feature in (a very busy) Iteration 3.
 
+After development was complete, we deployed the app to Heroku, allowing it to be used by the web at-large.
+
 ### Results
 We completed all of the project requirements, and passed almost all of the edge cases presented to us during our demonstration to the professor and TA. While using the site, we were told that our project was one of the better projects of the class - as the frontend and UX were my primary focus, I was proud of that!
-
-[Screenshot 1]
-
-[Screenshot 2]
-
-[Screenshot 3]

@@ -629,6 +629,13 @@
     }
 }
 
+.video-embed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $spacing-unit / 2;
+}
+
 
 %noselect{
   -webkit-touch-callout: none;
@@ -661,4 +668,19 @@
 
 .image-custom figcaption {
     margin-bottom: $spacing-unit;
+}
+
+.image-custom--max-height{
+    display: inline-block; //Allow images with a max-height to display next to each other
+    margin-right: 16px;
+    vertical-align: top;
+    margin-bottom: -1 * $spacing-unit / 2; //Deal with loss of collapsing margins
+    
+    figcaption {
+        margin-bottom: 0; //Deal with loss of collapsing margins 
+    }
+}
+
+.post-content__img-max-height{
+    //max-height: 450px;
 }

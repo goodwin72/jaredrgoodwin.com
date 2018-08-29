@@ -22,18 +22,18 @@
 {%- else -%}
     {%- assign img = include.img -%}
 
-    {%- if include.img-link -%}
-        {%- assign img_link = include.img-link -%}
-    {%- else %-}
+    {%- if include.img-link == '' or include.img-link == nil -%}
         {%- assign img_link = include.img -%}
+    {%- else %-}
+        {%- assign img_link = include.img-link -%}
     {%- endif -%}
 {%- endif -%}
 
 
-<div class="image-custom">
+<div class="image-custom {% unless include.height == '' or include.height == nil %} image-custom--max-height {% endunless %} ">
     <figure>
         <a href="{{ img_link | escape }}">
-            <img src="{{ img | escape }}" alt="{{ include.alt-text | escape }}"/>
+            <img {% unless include.height == '' or include.height == nil %} width="{{ include.height }}" {% endunless %} src="{{ img | escape }}" alt="{{ include.alt-text | escape }}"/>
         </a>
         <figcaption>{{ include.img-caption }}</figcaption>
     </figure>
