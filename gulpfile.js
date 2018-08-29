@@ -22,6 +22,7 @@ var excluded = [
 	"work__smash-bros-at-wsu-photo__3.jpg",
 	"work__smash-bros-at-wsu-photo__4.jpg",
 	"home-header-background.jpg"
+	"work__yelp-proejct__er-diagram.png"
 ]
 
 function imageWideEnough(file){

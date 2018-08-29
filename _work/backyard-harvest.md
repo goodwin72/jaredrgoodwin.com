@@ -26,7 +26,7 @@ We started by recording our own initial impressions of the site. There were seve
 Understanding our personal opinions of the site allowed us to both form a hypothesis for the testing and better avoid our own biases in the process of writing the test questions.
 
 <figcaption></figcaption>
-{%- include image-custom.html   img="/assets/img/work__backyard-harvest__oldsite.jpg" img-caption="Screenshot of the site in April 2017" alt-text="Screenshot of the Backyard Harvest website in April 2017" -%}
+{%- include image-custom.html img="/assets/img/work__backyard-harvest__oldsite.jpg" img-caption="Screenshot of the site in April 2017" alt-text="Screenshot of the Backyard Harvest website in April 2017" -%}
 
 ### Meeting with the organization
 Next, we met with a leader of the organization to introduce ourselves and to ask some questions about the organization's goals, the site's audience,and the goals of the site specifically. 
@@ -39,7 +39,7 @@ Next, using the information we received on who views the site, we designed **use
 Our personas included demographic information such as age, income, and employment, as well information about their connections to Backyard Harvest, including their familiarity with the brand, their experience using the site, and why they would seek out the site and its services in the first place.
 
 <figcaption></figcaption>
-{%- include image-custom.html   img="/assets/img/work__backyard-harvest__persona.png" img-caption="Example of our user personas" alt-text="Backyard Harvest Persona Example" -%}
+{%- include image-custom.html img="/assets/img/work__backyard-harvest__persona.png" img-caption="Example of our user personas" alt-text="Backyard Harvest Persona Example" -%}
 
 ### Writing the test questions
 After solidifying our user personas, we finally wrote the test questions. These were split into two sets:
@@ -73,7 +73,7 @@ A consistent opinion throughout the tests was that the site's bright appearance 
 Roughly a year later, the site underwent a redesign. We found that the two key points of our recommendations were taken into consideration in the redesign: **the site now clearly states what the organization does on the home page, and features both monetary *and* produce donation features on the donation page!**
 
 <figcaption></figcaption>
-{%- include image-custom.html   img="/assets/img/work__backyard-harvest__newsite__1.jpg" img-caption="The site's new home page now now has a clear description of the organization." alt-text="Screenshot 1 of new Backyard Harvest site showing new description of the organization" -%}
+{%- include image-custom.html img="/assets/img/work__backyard-harvest__newsite__1.jpg" img-caption="The site's new home page now now has a clear description of the organization." alt-text="Screenshot 1 of new Backyard Harvest site showing new description of the organization" -%}
 
 <figcaption></figcaption>
-{%- include image-custom.html   img="/assets/img/work__backyard-harvest__newsite__2.jpg" img-caption="The new donation page now features links for both produce and monetary donations." alt-text="Screenshot 2 of new Backyard Harvest site showing features for both produce and monetary donations" -%}
+{%- include image-custom.html img="/assets/img/work__backyard-harvest__newsite__2.jpg" img-caption="The new donation page now features links for both produce and monetary donations." alt-text="Screenshot 2 of new Backyard Harvest site showing features for both produce and monetary donations" -%}

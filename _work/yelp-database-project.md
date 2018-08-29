@@ -25,10 +25,15 @@ Across 3 milestones, our team of 3:
     - showing the number of checkins for a given business per day of the week, displayed as a bar graph
     - showing all of the reviews for a business, including counts of user reactions such as 'useful' and 'funny'
 
-Like all of the other projects completed for my upper-division computer science courses, we managed the project using a Git repository. The project is currently hosted on GitHub by one of my group partners here:
+Like all of the other projects completed for my upper-division computer science courses, we managed the project using a Git repository. The project is [available on GitHub](https://github.com/benhamlin314/yelp451), hosted by one of my group partners.
 
-[ER diagram]
-[several CREATE TABLE statements]
-[Screenshot of user page]
-[Screenshot of business page]
-[Screenshot of business checkins bar graph]
+<figcaption></figcaption>
+{%- include image-custom.html use-thumbnail=true  img="/assets/img/work__yelp-project__er-diagram.png" img-caption="Entity-relationship diagram used to model our database prior to development" alt-text="Entity-relationship diagram modeling our database" -%}
+
+{%- include image-custom.html img="/assets/img/work__yelp-project__screenshot__1.png" alt-text="Yelp Project Native App Screenshot 1" -%}
+
+{%- include image-custom.html img="/assets/img/work__yelp-project__screenshot__2.png" alt-text="Yelp Project Native App Screenshot 2" -%}
+
+{%- include image-custom.html img="/assets/img/work__yelp-project__screenshot__3.png" alt-text="Yelp Project Native App Screenshot 3" -%}
+
+

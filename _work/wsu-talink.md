@@ -20,7 +20,9 @@ The site features accounts for students and instructors, and functions as follow
 
 Here's a basic demonstration video, narrated by one of my team partners:
 
-<iframe class="video-embed" width="721" height="450" src="https://www.youtube-nocookie.com/embed/-QUQfQp4edU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-embed__wrapper">
+    <iframe class="video-embed" width="721" height="450" src="https://www.youtube-nocookie.com/embed/-QUQfQp4edU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 ### Creating a design document
 Before we began writing code, we wrote a design document and a project requirements document. 

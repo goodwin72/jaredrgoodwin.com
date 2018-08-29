@@ -15,7 +15,8 @@
     {%- assign thumb_link = thumb_link | append: "/thumb/" -%}
 
     {%- assign file_path = img_link_split_list | last | split: "." | first -%}
-    {%- assign thumb_link = thumb_link | append: file_path | append: "--thumb.jpg" -%}
+    {%- assign file_ext = img_link_split_list | last | split: "." | last -%}
+    {%- assign thumb_link = thumb_link | append: file_path | append: "--thumb." | append: file_ext -%}
 
     {%- assign img_link = include.img -%}
     {%- assign img = thumb_link -%}
