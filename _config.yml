@@ -35,7 +35,7 @@ exclude:
 permalink: pretty
 
 header_pages:
-  - work.html
+  - portfolio.html
   - blog.html
 
 #featured_work:
@@ -47,7 +47,7 @@ collections:
         permalink: /blog/:path/
     work:
         output: true
-        permalink: /:collection/:path/
+        permalink: /portfolio/:path/
     categories:
         output: true
         permalink: /blog/:path/
