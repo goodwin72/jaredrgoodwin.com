@@ -8,7 +8,7 @@ categories: Web
 end-date: 2017-12-08
 
 time-period: Fall 2017
-
+featured: 1
 ---
 
 **WSU TALink** is a web application that streamlines the process of choosing a teacher's assistant for a course. The site was built in a team of 3 for the semester-long project in Cpts 322 (Software Engineering Principles 1) at Washington State University.

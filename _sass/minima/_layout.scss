@@ -134,8 +134,9 @@
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+    @include relative-font-size(1.125);
+    color: $text-color;
+    margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
@@ -666,7 +667,11 @@
     }
 }
 
-.image-custom figcaption {
+//For some reason, the custom image template requires a blank figcaption to be 
+//  called before it outside of the include to not cause some HTML to be 
+//  considered text by the browser. So, only figcaptions underneath figures 
+//  should have a bottom margin.
+figure + figcaption {
     margin-bottom: $spacing-unit;
 }
 
@@ -685,6 +690,17 @@
     //max-height: 450px;
 }
 
+video{
+    width: 100%;
+    display: block;
+}
+
+.video-custom{
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 12) - 200px);
+	max-width:         calc(#{$content-width} - (#{$spacing-unit} * 12) - 200px);
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .video-embed__wrapper {
 	position: relative;

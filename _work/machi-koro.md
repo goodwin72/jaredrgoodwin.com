@@ -13,7 +13,15 @@ time-period: Summer 2017
 
 During my summer break from college in 2017, I created a video game version of the board game ***Machi Koro*** using the Unity game development engine.
 
-[.GIF]
+<div class="video-custom">
+    <figure>
+        <video controls>
+            <source src="/assets/video/machi-koro-demo-video.mp4" type="video/mp4">
+            <p>Uh-oh - your browser doesn't support this HTML5 video!</p>
+        </video>
+    </figure>
+    <figcaption>A demonstration of a few turns in the game.</figcaption>
+</div>
 
 ### About the board game
 
@@ -35,7 +43,10 @@ Certain sets of businesses have effects that build on top of each other, and the
 
 I started by creating UI mockups and outlining how objects in the game would be represented in the code.
 
-[scans]
+<figcaption></figcaption>
+{%- include image-custom.html img="/assets/img/work__machi-koro__sketch__1.jpg" img-caption="Sketch of the player display." alt-text="Sketch 1 from Machi Koro development" -%}
+
+{%- include image-custom.html img="/assets/img/work__machi-koro__sketch__4.jpg" img-caption="Sketch for a redesign of the coin display. The first version felt unintuitive." alt-text="Sketch 2 from Machi Koro development" -%}
 
 The first work I did included getting all of the game's visual assets into the game. I made scans of all of the cards and then cleaned each one up Photoshop. (I would have preferred to batch-process them, but the nature of my inexpensive scanner required some hand-edits on essentially every card.) I recreated the coins in Illustrator, as their design was fairly simple, and recreating them resulted in a cleaner asset than a scan could give. Finally, I chose two free fonts that felt reminiscent enough of the game's own to display all of the text - one for the player's stats, and another for everything else.
 

@@ -1,8 +1,8 @@
 ### Site variables ###
 title: Jared Goodwin
-email: your-email@example.com
+#email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-    example!
+    Web developer and designer based in Seattle, WA
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
