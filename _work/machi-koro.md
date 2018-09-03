@@ -79,14 +79,14 @@ A finite state machine is a system that requires an object to have a state assoc
 Here's why handling the game's program flow through state management would have made the code in this project much cleaner:
 
 Every turn in the game can be broken down into several components:
-1. rolling dice
+1. rolling dice (and handling landmark effects related to rolling)
 2. handling any card actions that require user input
 3. choosing what card to buy (if any), and 
 4. handling any post-turn effects caused by landmarks 
 
 During each of these states, certain actions should not be possible - for example, it shouldn't be possible to buy a card while rolling dice. I learned the hard way that I should have managed this through keeping track of what state the program is in, and have actions fire only if the game state allows them to. 
 
-Instead, I used coroutines, functions that can pause their execution if a condition has not been met and return to it later. This resulted in code that is difficult to maintain, as there is no centralized definition of what should be able to happen when. (This is appears to be a common 'gotcha' for Unity users who are beginners to GUI-based development: Unity makes the use of coroutines easy, and they're usually the first solution beginners find to handling problems involving state.)
+Instead, I used coroutines, functions that can pause their execution if a condition has not been met and return to it later. This resulted in code that is difficult to maintain, as there is no centralized definition of what should be able to happen when. (This appears to be a common 'gotcha' for Unity users who are beginners to GUI-based development: Unity makes the use of coroutines easy, and they're usually the first solution beginners find to handling problems involving state.)
 
 ### Results
 

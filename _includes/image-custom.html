@@ -34,7 +34,7 @@
 <div class="image-custom {% unless include.height == '' or include.height == nil %} image-custom--max-height {% endunless %} ">
     <figure>
         <a href="{{ img_link | escape }}">
-            <img {% unless include.height == '' or include.height == nil %} width="{{ include.height }}" {% endunless %} src="{{ img | escape }}" alt="{{ include.alt-text | escape }}"/>
+            <img {% unless include.height == '' or include.height == nil %} height="{{ include.height }}" {% endunless %} src="{{ img | escape }}" alt="{{ include.alt-text | escape }}"/>
         </a>
         <figcaption>{{ include.img-caption }}</figcaption>
     </figure>

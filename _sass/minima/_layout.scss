@@ -136,7 +136,7 @@
 .footer-heading {
     @include relative-font-size(1.125);
     color: $text-color;
-    margin-bottom: $spacing-unit / 2;
+    //margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
@@ -332,6 +332,14 @@
 /* -------------------------------------------- */
 /* BEGINNING OF NEW, NON-MINIMA-DERIVED CLASSES */
 /* -------------------------------------------- */
+
+hr {
+    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+    
+    color: transparent;
+    background-color: #d0d0d0;
+}
 
 /* Credit to https://css-tricks.com/full-browser-width-bars/ for this great
     implementation of a class that allows a background to 'break out' of the 
