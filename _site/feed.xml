@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-11T19:25:29-07:00</updated><id>http://localhost:4000/</id><title type="html">Jared Goodwin</title><subtitle>Web developer and designer based in Seattle, WA</subtitle><entry><title type="html">My Portfolio is Live!</title><link href="http://localhost:4000/blog/2018-08-29-first-post/" rel="alternate" type="text/html" title="My Portfolio is Live!" /><published>2018-08-29T00:00:00-07:00</published><updated>2018-08-29T00:00:00-07:00</updated><id>http://localhost:4000/blog/first-post</id><content type="html" xml:base="http://localhost:4000/blog/2018-08-29-first-post/">&lt;p&gt;Hello - welcome to my portfolio!&lt;/p&gt;
+
+&lt;p&gt;Over the last few weeks, I built the site that you’re currently looking at from the ground up. I’m going to give a much more detailed explanation of how it was all put together in a separate post in a few days, but here’s a sampling of what I used:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jeyll - a static site generator&lt;/li&gt;
+  &lt;li&gt;Liquid - an HTML templating language&lt;/li&gt;
+  &lt;li&gt;SASS - an extension language of CSS that provides a lot of new features that can make stylesheets much cleaner&lt;/li&gt;
+  &lt;li&gt;Gulp - a JavaScript task runner I used for automatic thumbnail generation&lt;/li&gt;
+  &lt;li&gt;BEM - a naming convention for CSS meant to standardize the names of classes (I also used it for image names on the site)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This post largely serves as a placeholder until the full write-up goes up.&lt;/p&gt;
+
+&lt;p&gt;Putting together my portfolio served as a nice reminder of the details of the larger projects I’ve done in the past. In some ways, it’s a bit of a confidence booster to both remember some of the intricacy of past projects, as well as see how much you’ve actually learned in a fairly short amount of time.&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy the site!&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello - welcome to my portfolio!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/site-launch.jpg" /></entry></feed>

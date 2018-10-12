@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web developer and designer based in Seattle, WA"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Yelp Database Design Project (School) | Jared Goodwin</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="Yelp Database Design Project (School)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a relational database and a native search application for the dataset released by Yelp in their 2013 Dataset Challenge." />
+<meta property="og:description" content="For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a relational database and a native search application for the dataset released by Yelp in their 2013 Dataset Challenge." />
+<link rel="canonical" href="http://localhost:4000/portfolio/yelp-database-project/" />
+<meta property="og:url" content="http://localhost:4000/portfolio/yelp-database-project/" />
+<meta property="og:site_name" content="Jared Goodwin" />
+<meta property="og:image" content="http://localhost:4000/work__yelp-project.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-10-11T19:25:29-07:00" />
+<script type="application/ld+json">
+{"description":"For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a relational database and a native search application for the dataset released by Yelp in their 2013 Dataset Challenge.","@type":"BlogPosting","url":"http://localhost:4000/portfolio/yelp-database-project/","image":"http://localhost:4000/work__yelp-project.jpg","headline":"Yelp Database Design Project (School)","dateModified":"2018-10-11T19:25:29-07:00","datePublished":"2018-10-11T19:25:29-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/portfolio/yelp-database-project/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jared Goodwin" /></head>
+<body>
+<header class="site-header" role="banner">
+
+	<div class="wrapper"><a class="site-title" rel="author" href="/">Jared Goodwin</a><nav class="site-nav">
+				<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+				<label for="nav-trigger">
+					<span class="menu-icon">
+						<svg viewBox="0 0 18 15" width="18px" height="15px">
+						<path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+						</svg>
+					</span>
+				</label>
+
+				<div class="trigger"><a class="page-link 
+                                " href="/portfolio/">Portfolio</a><a class="page-link 
+                                " href="/blog/">Blog</a></div>
+			</nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+			<div class="wrapper">
+				<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header"><div class="post-categories"><span class="post-categories__item">Software</span></div><h1 class="post-title p-name" itemprop="name headline">Yelp Database Design Project (School)</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="" itemprop="datePublished">
+            </time>
+            <span class="page-meta">Spring 2018</span></p><a href="">
+                <img src="/assets/img/work__yelp-project.jpg" alt="Yelp Database Design Project Visual Example"/>
+            </a></header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        <p>For the semester-long group project in my Cpts 451 (Introduction to Database Systems) course at Washington State University, I designed a <strong>relational database</strong> and a <strong>native search application</strong> for the dataset released by <strong>Yelp</strong> in their 2013 Dataset Challenge.</p>
+
+<p>Across 3 milestones, our team of 3:</p>
+<ul>
+  <li>modelled the data relationships using an Entity-Relationship diagram</li>
+  <li>used the ER diagram to build a database using PostgreSQL data definition language (DDL) statements</li>
+  <li>parsed the JSON data using a Python script, and inserted it into our database</li>
+  <li>created triggers in the database to enforce several constraints (e.g. automatically updating review counts and ratings as reviews are added to the reviews table)</li>
+  <li>created a GUI application using C# and Windows Presentation Foundation (WPF) that connects to the database and fulfills several project-defined use cases, including:
+    <ul>
+      <li>searching for a user and displaying their data</li>
+      <li>allowing a user to remove a friend from their friends list</li>
+      <li>searching for businesses in a particular state, city, and/or zipcode, and allowing for the results to be narrowed by any combination of several attributes (e.g. whether they are wheelchair accessible)</li>
+      <li>showing the number of checkins for a given business per day of the week, displayed as a bar graph</li>
+      <li>showing all of the reviews for a business, including counts of user reactions such as ‘useful’ and ‘funny’</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Like all of the other projects completed for my upper-division computer science courses, we managed the project using a Git repository. The project is <a href="https://github.com/benhamlin314/yelp451">available on GitHub</a>, hosted by one of my group partners.</p>
+
+<figcaption></figcaption>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/work__yelp-project__er-diagram.png">
+            <img src="/assets/img/thumb/work__yelp-project__er-diagram--thumb.png" alt="Entity-relationship diagram modeling our database" />
+        </a>
+        <figcaption>Entity-relationship diagram used to model our database prior to development</figcaption>
+    </figure>
+</div>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/work__yelp-project__screenshot__1.png">
+            <img src="/assets/img/work__yelp-project__screenshot__1.png" alt="Yelp Project Native App Screenshot 1" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/work__yelp-project__screenshot__2.png">
+            <img src="/assets/img/work__yelp-project__screenshot__2.png" alt="Yelp Project Native App Screenshot 2" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/work__yelp-project__screenshot__3.png">
+            <img src="/assets/img/work__yelp-project__screenshot__3.png" alt="Yelp Project Native App Screenshot 3" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+
+    </div><a class="u-url" href="/portfolio/yelp-database-project/" hidden></a>
+</article>
+
+			</div>
+		</main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <h2 class="footer-heading">Jared Goodwin</h2>
+                <p>Web developer and designer based in Seattle, WA</p>
+            </div>
+
+            <div class="footer-col footer-col-2">
+            </div>
+
+            <div class="footer-col footer-col-3">
+                <ul class="contact-list">
+                    <li><a href="https://drive.google.com/file/d/1V3eOP231nPaTIHNADJd6cJtnZlsa5MbY/view">Resume</a></li>
+                    <li><a href="https://github.com/goodwin72">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jared-goodwin-ba4b3a82/">LinkedIn</a></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
