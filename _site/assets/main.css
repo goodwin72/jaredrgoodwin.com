@@ -515,7 +515,7 @@ hr {
   font-size: 1.3em;
   margin-left: .1em;
   margin-bottom: .675em;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
   font-weight: 300; }
   @media screen and (max-width: 600px) {
     .home-banner p {
