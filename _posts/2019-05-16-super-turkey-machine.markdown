@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making 'Super Turkey Machine'"
-date:   2019-05-21
+date:   2019-05-24
 image: post__super-turkey-machine.jpg
 image-description: Post banner image
 categories: Mini-Project
