@@ -24,7 +24,7 @@ Here's a basic demonstration video, narrated by one of my team partners:
     <iframe class="video-embed" width="721" height="450" src="https://www.youtube-nocookie.com/embed/-QUQfQp4edU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-### Creating a design document
+## Creating a design document
 Before we began writing code, we wrote a design document and a project requirements document. 
 
 The design document described, in fairly granular detail, most of the aspects of our project. This included:
@@ -48,7 +48,7 @@ The project requirements document detailed:
 {%- include image-custom.html use-thumbnail=true height="375px" img="/assets/img/work__wsutalink__ui__3.jpg" alt-text="WSU TALink UI Mockup 3" -%}
 
 
-### Architecture
+## Architecture
 We developed the site using:
 - **Flask** - a Python web framework
 - **SQLAlchemy** - an [object-relational mapping](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it/1279678#1279678) library for Python (in short, this allowed us to manage a database without writing SQL)
@@ -60,7 +60,7 @@ We also used the **Model-View-Controller (MVC)** design pattern to decouple what
 
 In our case, the *model* is the SQL database, the *view* is the HTML and CSS rendering the page and the jQuery that updates it, and the *controller* is the Flask backend, which interacts with the database through SQLAlchemy and the page through AJAX calls made from jQuery.
 
-### Development using Agile methodology sprints
+## Development using Agile methodology sprints
 Our development process followed the Agile method. This is a project management approach in software development that splits the development cycle into consistent sections of time called 'sprints' with the intention that at the end of each sprint, the software will have added a set of features determined at the beginning of each sprint and be in a functional state.
 
 We developed the project in three sprints, each lasting approximately four weeks (adjustments to the class schedule resulted in some slight variation in sprint length).
@@ -75,5 +75,5 @@ We learned the hard way that sprints are *fixed* in length, and prioritize funct
 
 After development was complete, we deployed the app to Heroku, allowing it to be used by the web at-large.
 
-### Results
+## Results
 We completed all of the project requirements, and passed almost all of the edge cases presented to us during our demonstration to the professor and TA. While using the site, we were told that our project was one of the better projects of the class - as the frontend and UX were my primary focus, I was proud of that!

@@ -10,16 +10,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="For my senior internship, I redesigned the frontend of the website for LandEscapes, the student-run literary journal at Washington State University." />
 <meta property="og:description" content="For my senior internship, I redesigned the frontend of the website for LandEscapes, the student-run literary journal at Washington State University." />
-<link rel="canonical" href="http://localhost:4000/portfolio/landescapes/" />
-<meta property="og:url" content="http://localhost:4000/portfolio/landescapes/" />
+<link rel="canonical" href="/portfolio/landescapes/" />
+<meta property="og:url" content="/portfolio/landescapes/" />
 <meta property="og:site_name" content="Jared Goodwin" />
-<meta property="og:image" content="http://localhost:4000/work__landescapes.jpg" />
+<meta property="og:image" content="/work__landescapes.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-04-26T16:08:35-07:00" />
+<meta property="article:published_time" content="2019-05-24T15:05:41-07:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/portfolio/landescapes/","headline":"LandEscapes Site Redesign","dateModified":"2019-04-26T16:08:35-07:00","datePublished":"2019-04-26T16:08:35-07:00","image":"http://localhost:4000/work__landescapes.jpg","description":"For my senior internship, I redesigned the frontend of the website for LandEscapes, the student-run literary journal at Washington State University.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/portfolio/landescapes/"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/portfolio/landescapes/","headline":"LandEscapes Site Redesign","dateModified":"2019-05-24T15:05:41-07:00","datePublished":"2019-05-24T15:05:41-07:00","image":"/work__landescapes.jpg","description":"For my senior internship, I redesigned the frontend of the website for LandEscapes, the student-run literary journal at Washington State University.","mainEntityOfPage":{"@type":"WebPage","@id":"/portfolio/landescapes/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jared Goodwin" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jared Goodwin" /></head>
 <body>
 <header class="site-header" role="banner">
 
@@ -58,7 +58,7 @@
 
 <p>As a result of how much this project taught me about web development, involved interacting with stakeholders, and involved abiding by detailed guidelines, this write-up is <em>fairly long</em>. In many ways, it was an unusual project, full of hiccups along the way - but it’s also one that I learned a lot from.</p>
 
-<h3 id="the-beginning">The beginning</h3>
+<h2 id="the-beginning">The beginning</h2>
 
 <p>I entered the project with minimal information about how the site currently functioned. I was told by the person overseeing the project - the faculty advisor for LandEscapes - that the site ran on WordPress, and hadn’t been updated in over a year; beyond that, they didn’t know much about what was going on behind the scenes.</p>
 
@@ -80,8 +80,8 @@
 
 <p>From here, I’m going to split the project details mostly into two parts: design, and code.</p>
 
-<h3 id="design">Design</h3>
-<h4 id="primary-design-focus">Primary design focus</h4>
+<h2 id="design">Design</h2>
+<h3 id="primary-design-focus">Primary design focus</h3>
 <p>A lot of my focus on the redesign went to two parts of the site I felt particularly needed some work:</p>
 <ul>
   <li>Site navigation</li>
@@ -116,12 +116,12 @@
 
 <p>When I redesigned the pages, I designed one layout for each ‘kind’ of page (e.g. a section overview page) for consistency, and tried to create wider consistency in styling between pages on the site as a whole, as well.</p>
 
-<h4 id="adhering-to-wsu-branding-guidelines">Adhering to WSU branding guidelines</h4>
+<h3 id="adhering-to-wsu-branding-guidelines">Adhering to WSU branding guidelines</h3>
 <p>Partway through the project, I found out that much of the color palette and some of the page styling was decided for us due to all WSU network websites being <strong>required to use the same WordPress theme: WSU Spine</strong>. WSU Spine implemented many of these requirements and also set several page elements that were expected to be consistent across all WSU sites.</p>
 
 <p>The sidebar and the crimson link color are both examples of requirements implemented by the theme. For the most part, the font choice was locked-in as well; while we may have been able to utilize another font for special headers such as the home page, we were mostly regulated to that one font.</p>
 
-<h4 id="making-the-initial-drafts">Making the initial drafts</h4>
+<h3 id="making-the-initial-drafts">Making the initial drafts</h3>
 <p>All of the above considerations were worked through as I made initial design drafts for the redesign.</p>
 
 <p>For many of the designs, I first made a basic draft on my own, and then asked for feedback on it from the managing editor and the editor in chief.</p>
@@ -160,18 +160,18 @@
 </div>
 <p>Finally, the sepia color scheme set by the page headers was based on a request to update the site’s branding to match the newly-released journal, which also has a sepia color scheme.</p>
 
-<h4 id="lessons-learned-design">Lessons learned: Design</h4>
+<h3 id="lessons-learned-design">Lessons learned: Design</h3>
 <p>There are some design decisions that I would handle differently were I to design the site today. Among them, the size of the header on the home page bothers me the most; I think it’s too short, and would have been much more visually appealing and less ‘stuffy’ had it been larger.</p>
 
-<h3 id="code">Code</h3>
-<h4 id="the-pre-existing-site">The pre-existing site</h4>
+<h2 id="code">Code</h2>
+<h3 id="the-pre-existing-site">The pre-existing site</h3>
 <p>The old version of the site was made almost entirely with an enhanced version of the WordPress WYSIWIG page editor supplied by WSU Spine called ‘Page Builder’. Page Builder defined several base layout blocks that the user could choose from in making a page, such as a header, a ‘single’ (a full page width section meant for text), a two-column row, a three-column row, and a few more.</p>
 
 <p>As my goal was to give the site a specialized redesign (and to get more practice with web design and web development), I didn’t want to come <em>close</em> to touching a WSIWYG editor - and as a result, I set out to start coding my pages using HTML and CSS.</p>
 
 <p>(I’m bringing this up now since, due to some updates to the project requirements, this actually isn’t the last we’ll see of Page Builder - much more to come later…)</p>
 
-<h4 id="coding-the-intial-drafts-and-realizing-i-was-missing-something">Coding the intial drafts (and realizing I was missing something…)</h4>
+<h3 id="coding-the-intial-drafts-and-realizing-i-was-missing-something">Coding the intial drafts (and realizing I was missing something…)</h3>
 <p>After getting the team’s feedback on the page designs, I went to work actually making them. I created them in the way that I knew how from <a href="http://jaredrgoodwin.com/portfolio/rockin-bar-border-collies/">my first web development project</a>: from the ground up in vanilla HTML and CSS. This process went fairly smoothly, especially thanks to learning CSS flexbox in the process.</p>
 
 <p>However, it became quickly apparent that my current understanding of how web pages are written conflicted with how WordPress works. I could easily add all of my CSS rules to the site through the ‘Edit CSS’ option available by default in the WordPress dashboard, but when it came to the HTML, I was confused.</p>
@@ -182,7 +182,7 @@
 
 <p>Through a combination of experiments with a local development environment, searching the Internet for answers, and, in particular, asking the WSU Web team for pointers, I worked out my misunderstanding – and in the process, built much of my foundational knowledge of how modern web sites work.</p>
 
-<h4 id="how-wordpress-works">How WordPress works</h4>
+<h3 id="how-wordpress-works">How WordPress works</h3>
 <p>When you load a page on a website running WordPress, it doesn’t retrieve a stored HTML file. It instead runs some PHP code on the server that essentially defines a template for what the page will look like. Upon being run on the server, it pulls all of the content that it asks for - images, text, etc. - from a database, puts it all together into an HTML page as outlined in the code, and returns the newly-formed page to the browser.</p>
 
 <p>While I was already familiar with the concepts of dynamic webpages and server-side scripting by this point through working on <a href="http://jaredrgoodwin.com/portfolio/wsu-talink/">WSU TALink</a>, the concept of web templating was very new to me. <strong>I was surprised to find that WordPress themes aren’t just for visual styling – they also contain the code that defines templates for the basic document layout of the page.</strong></p>
@@ -191,7 +191,7 @@
 
 <p>With this better understanding of how WordPress works, this seemed like the cleanest solution to my problems. That said, as I prepared to begin making the child theme, I had one final requirements hurdle to clear that would again change the course of my implementation…</p>
 
-<h4 id="the-big-architecture-decision-considering-the-next-site-manager">The big architecture decision: Considering the next site manager</h4>
+<h3 id="the-big-architecture-decision-considering-the-next-site-manager">The big architecture decision: Considering the next site manager</h3>
 <p>As I planned to move to using tools not available in the WordPress dashboard, I learned some important history of the site’s management: <strong>LandEscapes regularly has content managers run the site, and only occassionally has a web developer work on it.</strong> This seemed to be because they often struggle to find someone in the department who is interested in working it.</p>
 
 <p>Since I knew the department could struggle again next year to find someone to work on the site, and it was even <em>less</em> likely that the next person running the site would also be a developer, the faculty advisor and the leaders of LandEscapes both found it important to make the site manageable by a non-developer.</p>
@@ -202,7 +202,7 @@
 
 <p>So… how would I complete the redesign without access to the primary tool that would allow me to change how the page layout works?</p>
 
-<h4 id="re-enter-the-wsu-spine-page-builder">Re-enter the WSU Spine Page Builder</h4>
+<h3 id="re-enter-the-wsu-spine-page-builder">Re-enter the WSU Spine Page Builder</h3>
 <p>At the last WSU Web meeting of the semester, I found out that Page Builder is a <em>bit</em> more powerful than initially meets the eye.</p>
 
 <figcaption></figcaption>
@@ -238,14 +238,14 @@
 
 <p>I spent the last several weeks of the project converting my original designs to use Page Builder, taking the ‘building blocks’ supplied and fleshing them out using a large number of custom CSS classes. Since the designs were relatively simple, the site ended up looking almost the same after doing this behind-the-scenes work - mission accomplished!</p>
 
-<h4 id="considerations-in-overriding-the-base-theme">Considerations in overriding the base theme</h4>
+<h3 id="considerations-in-overriding-the-base-theme">Considerations in overriding the base theme</h3>
 <p>Since my styling was building on top of a pre-existing theme that gets regular updates - and my styling changes were unlikely to be maintained for a while after I left - there were some considerations to make concerning how the theme may change in the future.</p>
 
 <p>With the exception of a few elements, I chose to let WSU Spine handle much of the padding and margins for common elements to allow those to change over time to match other WSU sites and stay unified. (If I had changed a few, but not all of them, the site could start to look ‘patchy’ over time.)</p>
 
 <p>I also struggled with how to handle CSS specificity at times. Page Builder automatically places its elements into row and column classes that can’t be removed, meaning that some rules that I wanted to use for my new classes didn’t have high enough specificity to go through. I could have added those classes to the rule to override it (e.g. “.row .column .myClass”), but I knew that WSU Spine was planning to move to a new Page Builder system soon, and there was no guarentee that these classes would stay the same. Because of this, there were a few times where my only option for the longegivity of the site was to use the rightfully-disliked !important modifier (making it clear again that while this wasn’t the <em>preferred</em> solution to the problem, it was the best one available considering the requirement to use a specific theme and not modify it).</p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h2 id="conclusion">Conclusion</h2>
 <p>In spite of the rigid project requirements and initial misunderstandings of WordPress, the final site design was something that the leaders of LandEscapes were ultimately very happy with.</p>
 
 <p>Considering just how many interconnected pieces and false starts there were to this project, I made my final task documenting as much as I could for the next site manager/developer. I made a fair number of comments in the code and <a href="https://drive.google.com/open?id=1HR5SgeB98pQSZq4v5HWObxIeO9Cn6488">wrote up a fairly lengthy ‘letter to the next person’</a> detailing essentially everything they’ll need to know to maintain what I’ve done with the site, as well as a few other important details such as who the WSU Web team are and how to get in contact with them.</p>
@@ -271,7 +271,7 @@
 
             <div class="footer-col footer-col-3">
                 <ul class="contact-list">
-                    <li><a href="https://drive.google.com/file/d/13Z0MxFmw0MxnAHyoIBOh9zWK18Xq5hc-/view">Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1PBnwArTol-v-JrnTaDCgAWZBvnD0qEbx/view">Resume</a></li>
                     <li><a href="https://github.com/goodwin72">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/jared-goodwin-ba4b3a82/">LinkedIn</a></li>
                 </ul> 

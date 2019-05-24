@@ -15,14 +15,14 @@ I spent the majority of August creating the site you're looking at right now - m
 
 Along the way, I learned a lot about several important modern web development tools that I'd never used before. Perhaps the most important of these were **HTML templating** (through Liquid), and **CSS preprocessing** (using SASS) - the former being something I'd never fully understood how to utilize, the latter being something I highly underestimated the utility of. I also learned about **standardized CSS naming conventions** through following the [BEM naming format](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) when making new CSS classes, and learned the basics of using a **task runner**, utilizing Gulp for some automated image processing.
 
-### The beginning
+## The beginning
 Shortly after finishing my work for LandEscapes, I moved on to the most critical thing on my personal to-do list: finally making a portfolio site. I'd meant to start work on the site during my last semester in college, but amidst an unexpectedly difficult semester academically and personally, I never quite found the time. 
 
 I went into the project knowing that the sooner I completed it, the better off I would be in the job search process, as a solid portfolio is essentially a must-have for web developers. (Especially if you tend to have a focus on the frontend side of things like I do!) 
 
 At the same time, through starting to attend tech meetups in Seattle, I'd quickly discovered that there were several important web development concepts that I was unfamiliar with, and really should gain experience with as soon as possible. **HTML templating** was easily the most important of these, a concept that, upon learning about it, left me with a strong feeling of "why in the world do I not know this?". To the best of my ability, I wanted the creation of my portfolio site to be quick, but also be a project where I would learn and gain experience with several new tools.
 
-### Deciding on a foundational tool
+## Deciding on a foundational tool
 Before I made any design drafts for the site, I wanted to settle on the foundational tool that I would use to make it. While I'm of the belief the initial designs are best made without much consideration of any particular tools (as I find its generally helpful to come up with your ideal site first and then work from there), I wanted at least a cursory idea of what technological boundaries I'd be working within. I felt there were far too many possibilities in making a personal site, and choosing a tool from the start would help narrow down those possibilities and give some direction to the project.
 
 The only considerations I had for my personal site going in were:
@@ -38,7 +38,7 @@ Furthermore, Jekyll comes bundled with an HTML templating system called Liquid, 
 
 I spent a few days learning the basics of Jekyll, such as using includes, collections, front matter, and changing important config options. I made basic proof-of-concept sites, and tried out small incremental changes to make sure I understood how everything worked (as opposed to having those changes breaking everything if I didn't). When I felt I had at least an intermediate understanding of how to properly use Jekyll, I moved on to the design phase for the real project.
 
-### The design process
+## The design process
 With the foundational tool chosen, I began the process of designing the site. This involved creating mockups of the site flow, the directory structure, and page layouts. I also decided upon a consistent color palette that would be used across the site.
 
 <figcaption></figcaption>
@@ -62,7 +62,7 @@ I also made a mockup of the above-the-fold content for the home page in Photosho
 
 Now that I had a solid guideline for how the site should look, I moved on to actually coding the site.
 
-### Development
+## Development
 My desire to finish this site sooner rather than later pushed me to consider starting with some kind of theme. I was initally very reluctant to do so - the last thing I wanted was for my personal site to be visually derivative, and not reflective of my sense of design. At the same time, however, I knew that I had a limited amount of time to make the site, so I wanted to find some kind of middle ground.
 
 It turns out that my initial experiments with Jekyll led to the discovery that its default theme, Minima, actually lives up to its name. It's impressively non-descript; it doesn't impose much of a visual identity on its own, and the small extent to which it does is easy to reconfigure and build into something distinct. 
@@ -73,10 +73,10 @@ While I foresaw a lot of potential issues in my design documents, I still had un
 
 Overall, the development went smoothly, and the final site ended up looking considerably like my design drafts. By the end of the month, I had a personal portfolio site that I was quite happy with!
 
-### Things I'd do differently
+## Things I'd do differently
 While this is one of the web projects I've felt most satisfied with, there are a few things I would do differently if I were to make the site now:
 1. I would heavily consider adding Bootstrap or another grid-based CSS framework to the site. Minima doesn't feature a grid setup, and my solutions for my grid-based needs both took me a while to make and aren't as foolproof as something as thoroughly tested as as popular framework.
 2. While learning to use Gulp to automate image thumnbail creation was a time-saver, I made the decision to have it only make a thumbnail if an image wouldn't already suffice for a thumbnail (i.e. its size dimensions were already acceptable). This was an unnecessary space optimization that resulted in a 'use-thumbnail' parameter being necessary for my custom image include, which is unwieldy to use.
 
-### Conclusion
+## Conclusion
 Through the use of templating, more reusable CSS, and carefully thought-out visual design, my portfolio site is one of the web development projects that I'm most proud of in my work history. It's definitely the most visually appealing, and it's much more technically advanced than anything I'd done prior. It was probably the first webdev project where I felt that I'd really "built it the right way" - one of my favorite feelings in programming!

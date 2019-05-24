@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web developer and designer based in Seattle, WA"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Making ‘Super Turkey Machine’ | Jared Goodwin</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Making ‘Super Turkey Machine’" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It’s been a little while since I’ve updated my site, so I’ve decided to write some blog posts about a few of the smaller projects I’ve worked on in the last few months!" />
+<meta property="og:description" content="It’s been a little while since I’ve updated my site, so I’ve decided to write some blog posts about a few of the smaller projects I’ve worked on in the last few months!" />
+<link rel="canonical" href="/blog/2019-05-16-super-turkey-machine/" />
+<meta property="og:url" content="/blog/2019-05-16-super-turkey-machine/" />
+<meta property="og:site_name" content="Jared Goodwin" />
+<meta property="og:image" content="/post__super-turkey-machine.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-21T00:00:00-07:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/blog/2019-05-16-super-turkey-machine/","headline":"Making ‘Super Turkey Machine’","dateModified":"2019-05-21T00:00:00-07:00","datePublished":"2019-05-21T00:00:00-07:00","image":"/post__super-turkey-machine.jpg","description":"It’s been a little while since I’ve updated my site, so I’ve decided to write some blog posts about a few of the smaller projects I’ve worked on in the last few months!","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019-05-16-super-turkey-machine/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jared Goodwin" /></head>
+<body>
+<header class="site-header" role="banner">
+
+	<div class="wrapper"><a class="site-title" rel="author" href="/">Jared Goodwin</a><nav class="site-nav">
+				<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+				<label for="nav-trigger">
+					<span class="menu-icon">
+						<svg viewBox="0 0 18 15" width="18px" height="15px">
+						<path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+						</svg>
+					</span>
+				</label>
+
+				<div class="trigger"><a class="page-link 
+                                " href="/portfolio/">Portfolio</a><a class="page-link 
+                                " href="/blog/">Blog</a></div>
+			</nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+			<div class="wrapper">
+				<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header"><div class="post-categories"><span class="post-categories__item">Mini-Project</span></div><h1 class="post-title p-name" itemprop="name headline">Making 'Super Turkey Machine'</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="2019-05-21T00:00:00-07:00" itemprop="datePublished">May 21, 2019
+            </time>
+            <span class="page-meta"></span></p><a href="">
+                <img src="/assets/img/post__super-turkey-machine.jpg" alt="Post banner image"/>
+            </a></header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        <p>It’s been a little while since I’ve updated my site, so I’ve decided to write some blog posts about a few of the smaller projects I’ve worked on in the last few months!</p>
+
+<p>The first of those is going to be Super Turkey Machine, a little one-page web app that I made in 3 days for Smash Bros at WSU (which I helped run for about four years in college).</p>
+
+<figcaption></figcaption>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/post__super-turkey-machine__1-alt2.jpg">
+            <img src="/assets/img/post__super-turkey-machine__1-alt2.jpg" alt="" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<figcaption></figcaption>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/post__super-turkey-machine__2.jpg">
+            <img src="/assets/img/post__super-turkey-machine__2.jpg" alt="" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<h2 id="what-is-it">What is it?</h2>
+<p>Super Turkey Machine is a site that calculates Power Rankings - essentially the top 10 highest-placing players over the course of a semester - using an algorithm developed by the Smash Bros at WSU committee.</p>
+
+<p>When provided with a properly-formatted CSV file that lists all of the participants at all of the events during the semester and their results at each event, the site calcuates who should be given what ranking, and displays the results in a table format. (This is all done locally to increase privacy and remove the need for server-side code.)</p>
+
+<p>The algorithm was originally used in a native C# application that someone else on the committee made several years ago called the Turkey Machine. (The name originates from an inside joke within the committee.)</p>
+
+<p><strong>Super Turkey Machine is essentially a web-based recreation of that program</strong>, made with the intention of being able to be used on practically any web-enabled device, and - through taking advantage of the website format - provide up-front a good description of how to use it and how its algorithm works.</p>
+
+<h2 id="development">Development</h2>
+<h3 id="design">Design</h3>
+<p>Prior to writing code, I outlined the functional goals of the site, made a mockup of the layout, and created some of the necessary graphics (some others were made later during development).</p>
+
+<h4 id="outlining-goals-and-layout">Outlining Goals and Layout</h4>
+<p>The design of the site started with an outline of what I actually needed it to do. I realized quickly it really didn’t need much - from the user’s point of view, the primary functionality was essentially a two-step process:</p>
+<ul>
+  <li>Click a ‘browse button’</li>
+  <li>Select a properly-formatted CSV file</li>
+</ul>
+
+<p>The only additions from the developer’s point of view were to actually calculate the top 10 and show it to the player, and to give a description of how to use the program.</p>
+
+<p>The realization that the user experience should be this simple took me somewhat by surprise since I recalled the original application not being as intuitive…</p>
+
+<div class="video-custom">
+    <figure>
+        <video controls="">
+            <source src="/assets/video/turkey-machine-demo-video.mp4" type="video/mp4" />
+            <p>Uh-oh - your browser doesn't support this HTML5 video!</p>
+        </video>
+    </figure>
+    <figcaption>The original program.</figcaption>
+</div>
+
+<p>So here’s the original application in action. There were several issues here:</p>
+<ul>
+  <li>The primary functionality, file loading, was hidden away in a ‘File’ dropdown with nothing else in it. While this was probably made for practice with WinForms (I believe the author was using WinForms in a class at the time), file loading really could have been a GUI button for how important it is.</li>
+  <li>Actually having the app calculate the results after loading the CSV file required <em>clicking on the head</em>. How did we know to click on the head? …Trial-and-error! Even with the head being included as a joke*, this step was entirely unnecessary.</li>
+  <li>Finally, the included information about how the algorithm worked was somewhat hidden, and was missing some helpful details.</li>
+</ul>
+
+<p>Conveniently, simply following standard layout conventions for a website allowed me to pretty much automatically avoid all of these:</p>
+<ul>
+  <li>A button in the middle of a page is a standard UI element on the web.</li>
+  <li><a href="https://webdesign.tutsplus.com/articles/modal-and-modeless-boxes-in-web-design--webdesign-2282">Modals</a> are frequently used to display information after user input on the same page without disrupting the page design - perfect for the results display.</li>
+  <li>The page format allows for easy documentation right below the input field.</li>
+</ul>
+
+<p>With this thought through, I then made a rough mock-up of the site on a whiteboard.</p>
+
+<figcaption></figcaption>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/post__super-turkey-machine__3.jpg">
+            <img src="/assets/img/post__super-turkey-machine__3.jpg" alt="Mock-up of the site on a whiteboard" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<h4 id="graphics">Graphics</h4>
+<p>The other part of the design process was to create the graphics that I needed.</p>
+
+<p>I started with the hero banner for the top of the site. I knew it needed to be something that at least subtly evoked both WSU and Smash, something that could sit in the background and not be too distracting, and something that would scale well to different aspect ratios, as the site was meant to work well on mobile devices as well.</p>
+
+<p>I started with trying to utilize a candid photo from <a href="http://jaredrgoodwin.com/portfolio/smash-bros-at-wsu-photography/">Smash events that I  photographed at WSU</a>. This was a common technique I used in making our social media content, but found that it didn’t look very good at some aspect ratios, and thus didn’t work in a web format.</p>
+
+<p>I then thought about using one of the backgrounds I made for my <a href="http://jaredrgoodwin.com/portfolio/smash-bros-at-wsu-ads/">advertisements for our events</a>, but found that the backgrounds on their own didn’t evoke WSU as much as I would have liked. The designs managed to do this through the inclusion of a logo, and I figured I could find a way to avoid having to include another visual element (that I would then have to worry about properly positioning on the page at all aspect ratios) to properly evoke the SB@WSU brand.</p>
+
+<p>Finally, I tried designing a looping background using a WSU-themed color scheme and the in-game icons that denote a Smash characters’ origin franchise. This ultimately did exactly what I wanted it to, and was the design that stuck.</p>
+
+<figcaption></figcaption>
+<div class="image-custom  ">
+    <figure>
+        <a href="/assets/img/post__super-turkey-machine__4.jpg">
+            <img src="/assets/img/post__super-turkey-machine__4.jpg" alt="Background design for the site&#39;s hero header" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+<p>The last graphics to make were two images to accompany the different sections of the description. These also needed to scale to different aspect ratios, and I ultimately went with a cropped version of a properly-formatted CSV file and a specially-edited version of my <a href="http://jaredrgoodwin.com/assets/img/work__smash-bros-at-wsu-ad__3.jpg">first PR banner design</a>.</p>
+
+<h3 id="programming">Programming</h3>
+<p>Just a few weeks prior to starting Super Turkey Machine, I finished learning the basics of React, a Javascript frontend library that, among many other things, enforces structured, component-focused design, and one-directional state management (state is almost always passed down as a ‘prop’ from a parent to a child).</p>
+
+<p>I’d wanted to work on some of my own projects to solidify my understanding of React, and took Super Turkey Machine as an opportunity to do so.</p>
+
+<p>That said, there were two primary concerns that I’d had about doing this:</p>
+<ol>
+  <li>With how simple the site was going to be, I preferred the idea of the site not running entirely through Javascript. The PR calculator would obviously need Javascript (at least, to run in the browser and not require server-side code), but I preferred having the description available to the browser regardless of JS support.</li>
+  <li>Using React felt like over-engineering: the site could be completed fairly easily using jQuery and hand-coded HTML and CSS.</li>
+  <li>What would I use for parsing the CSV file that’s compatible with React’s concept of state?</li>
+</ol>
+
+<p>The first concern was resolved using a project called <a href="https://github.com/nozzle/react-static">React Static</a>, which does as its name indicates: allows one to build static React sites. I’d first considered using <a href="https://www.gatsbyjs.org/">Gatsby</a>, a more mature project and likely the most popular React static site generator as of now. However, I ran into issues getting Gatsby to work in Windows 7, the OS my development machine ran at the time. (I mostly use a Linux distribution called <a href="https://kubuntu.org/">Kubuntu</a> for development now, but I’ll talk more about this in a later blog post!)</p>
+
+<p>The second issue ultimately came to be fairly true of the final product - I don’t think that the site necessarily <em>needed</em> a Javascript framework, but it was still good practice on a site that wasn’t exactly ‘mission-critical’.</p>
+
+<p>Finally, the third was resolved using an NPM package called <a href="https://www.npmjs.com/package/react-csv-reader">react-csv-reader</a>. (It was another reminder of the power of package management; adding it to the project was as simple as running one command, and it essentially managed its own install. I’d used NPM a bit for my personal site, and a bit more while learning React, but this really drove home the potential power of a package management ecosystem.)</p>
+
+<p>With those basic concerns out of the way, I moved on to outlining the various components of the page, and how state would travel between them.</p>
+
+<p>This went fairly smoothly for this project thanks to its simplicity. Inside of App.js lies the different sections of the page:</p>
+<ul>
+  <li>Hero.js
+    <ul>
+      <li>PRCalculator.js (passed as a child)
+        <ul>
+          <li>Modal.js (rendered by PRCalculator.js)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>an HTML section for the description (not a component, as it would stay unique to this page were I to expand the site to multiple pages)</li>
+  <li>Footer.js</li>
+</ul>
+
+<p>From there, I implemented the design, and… that was it! Site complete!</p>
+
+<p><strong>Super Turkey Machine can be found <a href="http://superturkeymachine.jaredrgoodwin.com/">here</a></strong>. You can also check out the actual code behind the site on <a href="https://github.com/goo*dwin72/super-turkey-machine">my GitHub</a>.</p>
+
+<p>More blog posts to come about stuff I’ve been working on - thanks for reading!</p>
+
+<hr />
+
+<div class="footnote">
+<p>Notes:</p>
+
+<p>* To explain the joke: The head that appears prior to clicking is Mango, a top Melee player who got the nickname "The Buster" from an interview he gave after an infamous loss at Apex 2015. The head that appears after clicking is Buster from the children's TV show <em>Arthur</em>.</p>
+
+</div>
+
+    </div><a class="u-url" href="/blog/2019-05-16-super-turkey-machine/" hidden></a>
+</article>
+
+			</div>
+		</main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <h2 class="footer-heading">Jared Goodwin</h2>
+                <p>Web developer and designer based in Seattle, WA</p>
+            </div>
+
+            <div class="footer-col footer-col-2">
+            </div>
+
+            <div class="footer-col footer-col-3">
+                <ul class="contact-list">
+                    <li><a href="https://drive.google.com/file/d/1PBnwArTol-v-JrnTaDCgAWZBvnD0qEbx/view">Resume</a></li>
+                    <li><a href="https://github.com/goodwin72">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jared-goodwin-ba4b3a82/">LinkedIn</a></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

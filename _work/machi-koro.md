@@ -23,7 +23,7 @@ During my summer break from college in 2017, I created a video game version of t
     <figcaption>A demonstration of a few turns in the game.</figcaption>
 </div>
 
-### About the board game
+## About the board game
 
 *Machi Koro* is a board game where players build towns and try to raise enough money to build all 6 of the game's historical landmarks in their town - at which point, they win the game. 
 
@@ -37,7 +37,7 @@ Each player starts with 2 businesses, and purchases more through a marketplace s
 
 Certain sets of businesses have effects that build on top of each other, and there is strategy in choosing which ones to pair together. There are some businesses that also counter other players' setups, so one has to be able to adapt to the actions of the other players as well!
 
-### Making a video game recreation
+## Making a video game recreation
 
 *Machi Koro* was my first large-scale software project - creating it took roughly 100 hours of work. 
 
@@ -58,7 +58,7 @@ The project neared completion just as the fall semester at my university was abo
 
 The project was ultimately finished *two days* before school started. It needed some live testing with other players, but I had run through tests of all of the edge cases that I could think of and, most importantly, every feature that needed to be implemented to have a full recreation of the game and a solid user experience was complete.
 
-### Technical highlights
+## Technical highlights
 
 Developing the game helped solidify my understanding of **object-oriented programming**. I had to determine how to best represent the various components of the game - including the players, the marketplace, and the cards - in objects in the code. 
 
@@ -66,7 +66,7 @@ Of particular challenge was the implementation of card actions. While cards shar
 
 This project also introduced me to handling GUI events through the use of a **game loop**, a nearly-universal design pattern in video games used to handle the multitude of events that should happen on a frame-by-frame basis, such as polling for user input and rendering data changes to the screen. (I made some common beginner mistakes in handling game loops that I had to learn from - more in this in the next section.)
 
-### Lessons learned
+## Lessons learned
 
 As this was my first large-scale project, I made a number of mistakes that I learned from along the way. As the project size became fairly large, and the code base more difficult to handle as a result, I discovered several **design patterns** frequently utilized in video games. 
 
@@ -88,7 +88,7 @@ During each of these states, certain actions should not be possible - for exampl
 
 Instead, I used coroutines, functions that can pause their execution if a condition has not been met and return to it later. This resulted in code that is difficult to maintain, as there is no centralized definition of what should be able to happen when. (This appears to be a common 'gotcha' for Unity users who are beginners to GUI-based development: Unity makes the use of coroutines easy, and they're usually the first solution beginners find to handling problems involving state.)
 
-### Results
+## Results
 
 While I can't release the game or its source code publicly due to not owning the copyright, I still regularly play the game privately with friends. It's particularly useful now that my friend group is spread out across several different locations - so long as I can share my screen via a video call, I can play with others through showing them the board and enacting their choices on their behalf.
 

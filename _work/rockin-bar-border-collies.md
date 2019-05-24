@@ -17,12 +17,12 @@ As my first web development project, the site architecture is fairly simple, uti
 
 While the project is fairly simple relative to more recent work that I've done, there are two design decisions that I made for the site that are still noteworthy. Both were made in consideration its audience, which is largely comprised of older individuals from rural areas that are not particularly tech-savvy.
 
-### A focus on browser compatibility
+## A focus on browser compatibility
 When planning the site, I knew that a lot of its audience would be people who never update their web browsers, only changing what they use when they buy a new machine and/or phone and it ships with a newer browser. Because of this, I wanted to accommodate some very old browsers. **For this audience in 2015, this meant supporting as far back as Internet Explorer 8, if not IE7**. As a result, there is no use of a number of CSS rules that were generally adopted at the time, but not available in the oldest browsers still in reasonable use - the most notable of these being CSS's flexbox.
 
 As I added CSS rules, I routinely referenced online documentation on what browsers supported them, not using them if IE7 didn't support it.
 
-### A straight-forward, 'small-town' design
+## A straight-forward, 'small-town' design
 When I design a site for a business in a field that I'm not familiar with, I look to websites for other businesses in that field for an understanding of conventions and standards (both visual and functional) that may exist. Looking at other sites made by competitors in a field can give a sense of what the audience of that field cares about, and how to best communicate to that audience.
 
 Doing this research for Rockin' Bar Border Collies was unusual in that almost every website for stock dog breeders and trainers are *very* low-tech - they frequently have an early-2000's sense of web design. I decided that this was *probably* not to their benefit, and that making something a bit more modern would have a profound user experience improvement over the competition. *However*, considering that in my experience, the stock dog community tends to value the old-fashioned, the traditional, and the local, I also didn't want the site to feel *too* modern or corporate and ultimately alienate its audience.

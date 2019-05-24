@@ -5,7 +5,7 @@ date:   2018-08-29
 image: site-launch.jpg
 image-description: Post banner image
 categories: General
-featured: 1
+featured: 2
 ---
 
 Hello - welcome to my portfolio!
